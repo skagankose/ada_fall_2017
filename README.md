@@ -1,5 +1,10 @@
 # Patent application Analysis
 
+# External Files for the Project
+
+- [Patent Distribtuion Map of the World](/world.html).<br/>
+
+
 ## Abstract
 The idea of our project is to give a clear insight into the trends in research around the world, and shed the light on the latest technologies by analyzing a dataset of patents relative to these technologies. We shall give statistics by country and company of the number of granted patents, and analyze their evolution over time aiming to extract meaningful informations relative to the growth of a technology/industry.
 
