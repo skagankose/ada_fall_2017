@@ -1,8 +1,8 @@
 # Patent application Analysis
 
-# External Files for the Project
+## External Files for the Project
 
-- [Patent Distribtuion Map of the World](/world.html).<br/>
+- [Patent Distribtuion Map of the World](/world.html)
 
 
 ## Abstract
