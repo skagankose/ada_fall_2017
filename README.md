@@ -1,9 +1,10 @@
-# Patent application Analysis
+## Project Page for the Class Applied Data Analysis
 
-## External Files for the Project
-
+We are [Oussama](https://github.com/oussama6703), [Nicolas](https://github.com/Nicolas1325) and [Süha](https://github.com/skagankose).<br/>
+By using this website, you can reach some of the files that we've used within the project.
 - [Patent Distribtuion Map of the World](/world.html)
 
+# Patent application Analysis
 
 ## Abstract
 The idea of our project is to give a clear insight into the trends in research around the world, and shed the light on the latest technologies by analyzing a dataset of patents relative to these technologies. We shall give statistics by country and company of the number of granted patents, and analyze their evolution over time aiming to extract meaningful informations relative to the growth of a technology/industry.
