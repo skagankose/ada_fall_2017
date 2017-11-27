@@ -1,6 +1,6 @@
 ## Project Page for the Class Applied Data Analysis
 
-Our group members are [Oussama](https://github.com/oussama6703), [Nicolas](https://github.com/Nicolas1325) and [Süha](https://github.com/skagankose).<br/>
+We are [Oussama](https://github.com/oussama6703), [Nicolas](https://github.com/Nicolas1325) and [Süha](https://github.com/skagankose).<br/>
 
 ## External Files for to the Project
 - [Patent Distribtuion Map of the World](/world.html)
