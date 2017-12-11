@@ -4,6 +4,7 @@ We are [Oussama](https://github.com/oussama6703), [Nicolas](https://github.com/N
 
 ## External Files for to the Project
 - [Patent Distribtuion Map of the World](/world.html)
+- [AI Patents Distribtuion Map of the World](/ai_world.html)
 
 # Patent application Analysis
 
@@ -15,21 +16,21 @@ Patent application give an accurate idea on the evolution of high-end sectors su
 ## Research questions
 
 What is the general trend in research (patent application)? Is it growing?    	
-Which sectors have grown the most over time? (e.g: IT, Energy, Medical, Consumers goods, etc.) In which regions? 
+Which sectors have grown the most over time? (e.g: IT, Energy, Medical, Consumers goods, etc.) In which regions?
 Which countries deliver more patents? Is this correlated with the quality of their universities?
 Out of all the patent applications, how many of them are actually granted?
 In the future, what will be the evolution of the chosen sectors?
 
-Energy: 
-Is the research in Energy in the US increasing/decreasing? 
-Did Trump election or COOP21 influence the research in the Energy sector (less patents delivered after any political decision? Which green energy sector is the most popular currently and how did it evolve in the past (wind, solar, geothermal, energy storage …)? 
-Which country is more involved in that energy sector research? 
+Energy:
+Is the research in Energy in the US increasing/decreasing?
+Did Trump election or COOP21 influence the research in the Energy sector (less patents delivered after any political decision? Which green energy sector is the most popular currently and how did it evolve in the past (wind, solar, geothermal, energy storage …)?
+Which country is more involved in that energy sector research?
 What is the proportion of patent applications in the fossil energy compared to the green energy and how did it evolve over time?
 
-FinTech: 
-How did financial technology grow over the past decade? 
-How important is the use of mobile e-banking apps over the globe? 
-Which countries are involved the most in FinTech? Which companies hold most of FinTech patents? 
+FinTech:
+How did financial technology grow over the past decade?
+How important is the use of mobile e-banking apps over the globe?
+Which countries are involved the most in FinTech? Which companies hold most of FinTech patents?
 All these questions can be answered by analyzing the patents relative to these technologies and observing their evolution over time.
 
 Artificial Intelligence:
