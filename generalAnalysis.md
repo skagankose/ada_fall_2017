@@ -27,7 +27,7 @@ It is important to note that all the given numbers refers to granted patents app
 
 ## 1. General Picture of Granted Patents
 
-## 1.1. Evolution of Granted Patents' Count in Years
+## 1.1. Evolution of Granted Patents in Years
 
 In the first step, we wanted display the evolution of granted patents during the last decade in order to see the general trend. Since, the API cannot return more than 100'000 patents in one request, we needed to collect the number of patents month by month and aggregated the results by years. The resulting line graph can be seen in the following figure.
 
@@ -47,7 +47,7 @@ Next, we were curious about which companies has delivered most patents. We aim t
 
 As we can see International Business Machines Corporation (IBM) is the leading company by holding more than 120'000 patents, followed by Samsung Electronics (75'000) and Canon (65'000).
 
-## 1.2. A General Analysis of Country-wise Distribution of Patents
+## 1.3. Country-wise Analysis of Patents
 
 After companies, we moved into analysis according to countries. We acquired countries by examining inventors. It was the case that multiple inventors might be involved in a a given patent and these inventors might be located in different countries and so, we go through each inventor's country and increased the patent number belonging to this country by 1. It is also important to mention that for the initial analysis, we only examine the patents granted in the last year. (A more detailed investigations are conducted in the later stages of this project.)
 
@@ -63,7 +63,7 @@ As it can be seen from [Figure 3](#last_year_patents_by_country), there is a ver
 *Screenshot 1: The map of Number of Granted Patents in the Last Year*
 
 
-## 1.3. Sector-Wise Analysis of Countries according to CPC Categories
+## 1.4. Analysis of Patents belonging to Countries by CPC Categories
 
 The Cooperative Patent Classification (CPC) is patent categorization model which has been jointly developed by the European Patent Office (EPO) and the United States Patent and Trademark Office (USPTO).
 
