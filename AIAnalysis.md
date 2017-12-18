@@ -44,4 +44,41 @@ As we mentioned, we don't have information about number of citations that a pate
 
 ## 2.1.2. How much AI related patents granted through years and what its the ratio among other patents?
 
-Related to above question, we also hope to investigate following ideas. We know from common knowledge that AI related researches increased and decreased again during past decades, can we observe this patern by analysing the number of patents granted through years (in 1900s)? AI is also, one of the most popular area of research in today's world. Will these popularity will fade away like it did in the past or the haracteristic of the popularity trend is different this time? 
+Related to above question, we also hope to investigate following ideas. We know from common knowledge that AI related researches increased and decreased again during past decades, can we observe this patern by analysing the number of patents granted through years (in 1900s)? AI is also, one of the most popular area of research in today's world. Will these popularity will fade away like it did in the past or the haracteristic of the popularity trend is different this time?
+
+To answer this question, we calculated number of AI related patents for each year from 1976 until 2016. (At the time of analysis, data for 2017 was incomplete and not taken into consideration.) The corresponding figure is as follows.
+
+<a id='number_ai_patents_by_year'></a>
+![Image](img/number_ai_patents_by_year.png)
+*Figure 2.1: Number of Artificial Intelligence Related Patents in Years*
+
+From this figure, it seems that there are two periods of time where number of AI patents raised that are around 1986 and 2006. Other than these periods, the amount of AI related patent seems pretty steady. But considering that overall number of patents has also increased over years, to be able to see the whole picture and make a more complete analysis, we also need to check the percentage of AI patents among all patents through years (Figure 2.2).
+
+<a id='percentage_ai_patents_by_year'></a>
+![Image](img/percentage_ai_patents_by_year.png)
+*Figure 2.1: Percentage of Artificial Intelligence Related Patents in Years*
+
+There are couple of observations worth mentioning about these figures. **First** of all, above graph starts with a decline from 1976. We already know that AI was popular field of research at 1960s (e.g. Artificial Neural Networks invented in this period.) and its popularity started to decline around 1970s (because of insufficient computing power and datasets). Although, we don't have information of patents in 1960s, we can see that the graph starts with a steady line in 1976 then, rapidly declines in 1977. It continues to fall for 3 years until it hits the lowest value in 1980.
+The rate in 1977 is only reached again in 1989 which is 12 years lates.  So, the graph confirms our knowledge about the popularity of AI researches in 1960s. With this information, we believe that it is safe to assume, percentage of AI patents is an indication of popularity in AI researches. **Another** interesting point is that percentage of AI patents dramatically increases from 1987 to 1994 then, stays steady about 3 years until it starts to decline again for 5 years, until 2002. The rate of AI patents in 1996 is only reached after 10 years later, around 2006. We can see that this trend is pretty similar to 1960s', it starts with a rapid increase, followed by a steady period then, a decrease for couple of years and in both situation, around 10 years had to past before the rate came back to where it was. In light of this information, we can try to analyze the **current situation**. We see that there is a dramatic increase on patent rates from 2002 to 2012 then, it stays about the same with minor fluctuations. The characteristic that increasing rapidly and entering into steady phase is pretty similar to what we observed in last decades however it seems that the steady phase are not followed by a decline since the rate starts to increase again in 2016. Although this might be an indication that popularity of AI related researches won't decline this time, it is still too early to infer that. The first two phases were similar to what has been observed in the past decades but it requires time (at least couple more years) to decide whether this time will characteristic of the trend will be different or not.
+
+One other valuable observation is that the AI researches are dramatically increased over 40 years, it was around *30 per/year with 0.03 percentage* and it is around *700 per/year with a percentage of 0.12* now.
+
+As the next step, we wanted to analyse inventors.
+
+## 2.1.3. Who are the most prolific inventors?
+
+Since we already have the required data, we just calculated number of patents that delivered by each inventors. Top inventors with highest number of patents in a sorted order can be seen in the following figure.
+
+<a id='most_prolific_inventors'></a>
+![Image](img/most_prolific_inventors.png)
+*Figure 2.1: List of Prolific Inventors in the Field of Artificial Intelligence*
+
+There is not much to interpret about this table (since we are already analyzing related companies and countries in other parts of the study). However, here is some information about top AI patent holders which confirms that we are on the right track.
+
+**[Philip Yu](https://en.wikipedia.org/wiki/Philip_S._Yu)** is an American computer scientist and Professor in Information Technology at the University of Illinois at Chicago, known for his work in the field of data mining.
+
+**[Dharmendra Modha](https://en.wikipedia.org/wiki/Dharmendra_Modha3)** is an Indian American manager and lead researcher of the Cognitive Computing group at IBM Almaden Research Center. He is known for his pioneering works in Artificial Intelligence and Mind Simulation.
+
+With that, we move into company-wise analysis of AI related patents.
+
+## 2.1.4. Which companies are holding most AI patents?
