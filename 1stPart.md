@@ -46,10 +46,11 @@ As we can see International Business Machines Corporation (IBM) is the leading c
 
 After companies, we moved into analysis according to countries. We acquired countries by examining inventors. It was the case that multiple inventors might be involved in a a given patent and these inventors might be located in different countries and so, we go through each inventor's country and increased the patent number belonging to this country by 1. It is also important to mention that for the initial analysis, we only examine the patents granted in the last year. (A more detailed investigations are conducted in the later stages of this project.)
 
+<a id="last_year_patents_by_country"></a>
 ![Image](img/last_year_patents_by_country.png)
 *Figure 2: Number of Granted Patents in the Last Year by Countries*
 
-We also wanted to visualize these findings in a choropleth world map to highlight dispersion granted patents across the countries. In PatensView dataset, country names are coded according to the Alpha-2 ISO norm and to be able to draw the map, it is required a .geojson file that maps these country codes into actual locations. For this purposes, we used take (this)[LINK REQUIRED] .geojson file and customized for our purposes.
+We also wanted to visualize these findings in a choropleth world map to highlight dispersion granted patents across the countries. In PatensView dataset, country names are coded according to the Alpha-2 ISO norm and to be able to draw the map, it is required a .geojson file that maps these country codes into actual locations. For this purposes, we used take [this](LINK REQUIRED) .geojson file and customized for our purposes.
 
 As it can be seen from Figure 2, there is a very large gap between countries in terms of number of patents and to be able to have a more descriptive choropleth map, we opted for a logarithmic scale. The screenshot of the resulting map can be seen in Figure 3 and we served the interactive visualization of this map in [here](html/patents_by_country.html).
 
@@ -58,3 +59,47 @@ As it can be seen from Figure 2, there is a very large gap between countries in 
 
 
 ### 1.2 Sector-Wise Analysis of Countries according to CPC Categories
+
+The Cooperative Patent Classification (CPC) is patent categorization model which has been jointly developed by the European Patent Office (EPO) and the United States Patent and Trademark Office (USPTO).
+
+CPC categories are indicated in the following table. In this part of our project, we analyzed countries by number of patents granted according these categories.
+
+
+| **CODE** | **DESCRIPTION**   |
+|------|------|
+|   **A**  | Human Necessities|
+|   **B**  | Operations and Transport|
+|   **C**  | Chemistry and Metallurgy|
+|   **D**  | Textiles|
+|   **E**  | Fixed Constructions|
+|   **F**  | Mechanical Engineering|
+|   **G**  | Physics|
+|   **H**  | Electricity|
+|   **Y**  | Emerging Cross-Sectional Technologies|
+*Table 1: Patent Categories according to Cooperative Patent Classification*
+
+As we did in the previous section, we started the analysis by gathering patents granted within the last year. For each of these patents, we also acquired belonging country and CPC category code. With help of these two information, we were able to determine top countries for each category. Resulting graphs are as follows.
+
+![Image](img/patents_by_categories.png)
+*Figure 4: Number of Granted Patents in the Last Year according to CPC Categories with Bar Charts*
+
+As it can be seen, we draw only some of the figures because of space concerns but, figures belonging to all categories can be reached from our [notebook](LINK REQUIRED). Almost for all of these categories United States and Japan take the 1st and 2nd however as for the 3rd place, Switzerland, South Koreas or Germany took over in according to different CPC categories. To be able to see all of these ranking in a single figure, we decided to draw a stacked bar chart which is demonstrated in [Figure 5](#patents_by_categories_stacked).
+
+<a id='patents_by_categories_stacked'></a>
+![Image](img/patents_by_categories_stacked.png)
+*Figure 5: Number of Granted Patents in the Last Year according to CPC Categories with a Stacked Chart*
+
+Although this figure seems similar to [figure we draw](#last_year_patents_by_country), it is not the case since for some patents, it might be the case that they belong to multiple CPC categories.
+
+At this point, we wanted display these results in a more descriptive way that can reveal more insights related to patent characteristics of countries. We figured that spider charts can serve this purpose quite nicely. Again, we draw figures only for certain countries (United States, Japan, Germany and Switzerland) and the rest can be reached from our [notebook](LINK REQUIRED).
+
+<a id='patents_by_categories_spider'></a>
+![Image](img/patents_by_categories_spider.png)
+*Figure 6: Number of Granted Patents in the Last Year according to CPC Categories with Spider Charts*
+
+This figures reveal that Japan and the United States hold most of their patents in the Electricity and the Physics sectors while Switzerland's patents are more concentrated on Chemistry, Humans Necessities and Physics. Germany seems to hold significant number of patents in Transportation sector.
+It is clear from these charts that Germany and Switzerland are much more polyvalent than United States and Japan since they have highly diversified patents across many of the CPC sectors.
+
+With that, we conclude the first part of the project and move into more advanced analysis with sector specific investigations.
+
+## 1. Sector-Specific Analysis of Granted Patents
