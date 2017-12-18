@@ -2,17 +2,14 @@
 
 # Introduction
 
-The idea behind our project is extracting meaningful and valuable insights about research trends around the world and shed some light on technologies related to certain sectors by analyzing granted patents throughout years. In first part of the project, we start by giving some summary and statistics about patents by countries and companies. We wanted analyze the evolution of granted patents over time with the purpose of extracting meaningful informations relative to different sectors. In the second part of the project, we are aiming to dive deeper in analysis and explore some of the most popular technology related sectors in this century. More specifically, the sector we are interested in are energy, financial technologies and artificial intelligence.
+The idea behind our project is extracting meaningful and valuable insights about research trends around the world and shed some light on technology trends related to certain sectors by analyzing granted patents throughout years. In first part of the project, we start by giving some summary and statistics about patents by countries and companies. We wanted analyze the evolution of granted patents over time with the purpose of extracting meaningful informations relative to different sectors. In the second part of the project, we are aiming to dive deeper in analysis and explore some of the most popular technology related sectors in this century. More specifically, the sector we are interested in are energy, financial technologies and artificial intelligence.
 Most part of the project is structured around these three sectors. We study them comprehensively in order to understand their evolution in the time and relations with companies and countries.
 
 # Dataset
 
 The dataset that we used in this study is acquired from [PatentsView](http://www.patentsview.org). PatentsView provides an highly convenient API that allowed us to search for patents according to many different criteria such as to a patent title, inventor or locations. For instance, it is possible to look for how many patents in a specific topic were delivered by IBM in California from 2012 and 2015.
 
-Here is a query example that returns the patent_number for patens granted after 2007.
-[http://www.patentsview.org/api/patents/query?q={"_gte":{"patent_date":"2007-01-04"}}&f=["patent_number"]](http://www.patentsview.org/api/patents/query?q={"_gte":{"patent_date":"2007-01-04"}}&f=["patent_number"])_
-
-In addition to PatentsView dataset, we used various other resources to get certain required informations for the second part of our analysis such world defence industry rankings from [Defense News](http://people.defensenews.com/top-100/) and the list of top technology companies from [Fortune](http://fortune.com/2015/06/13/fortune-500-tech/)...
+In addition to PatentsView dataset, we used various other resources to get certain required informations for the second part of our analysis such [defence industry rankings](http://people.defensenews.com/top-100/) from Defense News  and the [list of top technology companies](http://fortune.com/2015/06/13/fortune-500-tech/). from Fortune.
 
 # Methodology
 
@@ -76,6 +73,7 @@ CPC categories are indicated in the following table. In this part of our project
 |   **G**  | Physics|
 |   **H**  | Electricity|
 |   **Y**  | Emerging Cross-Sectional Technologies|
+
 *Table 1: Patent Categories according to Cooperative Patent Classification*
 
 As we did in the previous section, we started the analysis by gathering patents granted within the last year. For each of these patents, we also acquired belonging country and CPC category code. With help of these two information, we were able to determine top countries for each category. Resulting graphs are as follows.
