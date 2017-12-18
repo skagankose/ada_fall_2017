@@ -11,6 +11,12 @@ The dataset that we used in this study is acquired from [PatentsView](http://www
 
 In addition to PatentsView dataset, we used various other resources to get certain required informations for the second part of our analysis such [defence industry rankings](http://people.defensenews.com/top-100/) from Defense News  and the [list of top technology companies](http://fortune.com/2015/06/13/fortune-500-tech/). from Fortune.
 
+# Tools and Libraries
+
+We want to briefly mention about main tools and libraries that we used for the project. Programming language we used was Python since it has all of the required libraries needed to conduct this study. Some of the libraries we used can listed as follows: [Pandas](https://pandas.pydata.org) which provides high-performance, easy-to-use data structures and data analysis tools, [Matplotlib](https://matplotlib.org) which is a plotting library that can produce high quality figures in a variety of formats across platforms, [Seaborn](https://seaborn.pydata.org) which is a more advanced Python visualization library based on Matplotlib, [Beautiful](https://en.wikipedia.org/wiki/Beautiful_Soup_(HTML_parser)) Soup which is a package to for scraping and parsing HTML and XML documents and [Folium](https://folium.readthedocs.io/en/latest/#) which is a Python library to manipulate interactive [Leaflet](http://leafletjs.com) maps.
+
+It also needs emphasizing that we've used [Jupyter Notebook](http://jupyter-notebook.readthedocs.io) as the main development environment since it a highly convenient way of creating and sharing documents that contain live code, equations, visualizations and narrative text.
+
 # Methodology
 
 The project can be separated into two parts. In the first part, we conducted a more general research to be able to see the overall picture related to granted patents. We tried to analyze the characteristic of granted patents by observing number of patent through years and associating them with countries and companies. We also give a generic sector-wise overview of granted patens (according to Cooperative Patent Classification categories).
@@ -21,9 +27,9 @@ It is important to note that all the given numbers refers to granted patents app
 
 ## 1. General Picture of Granted Patents
 
-### 1.1 Evolution of Granted Patents Count throughout Years
+## 1.1. Evolution of Granted Patents' Count in Years
 
-First of all, we wanted display the evolution of granted patents during the last decade in order to see the general trend. Since, the API cannot return more than 100'000 patents in one request, we needed to collect the number of patents month by month and aggregated the results by years. The resulting line graph can be seen in the following figure.
+In the first step, we wanted display the evolution of granted patents during the last decade in order to see the general trend. Since, the API cannot return more than 100'000 patents in one request, we needed to collect the number of patents month by month and aggregated the results by years. The resulting line graph can be seen in the following figure.
 
 <a id="number_of_patents_by_years"></a>
 ![Image](img/number_of_patents_by_years.png)
@@ -31,7 +37,7 @@ First of all, we wanted display the evolution of granted patents during the last
 
 It is clear from this figure that granted patents has dramatically surged in numbers. This situation is expected since the amount of researches has also increased all over the world in 21st century and continue to do so.
 
-### 1.2 Company-wise Analysis of Patents
+## 1.2. Company-wise Analysis of Patents
 
 Next, we were curious about which companies has delivered most patents. We aim to display the top companies in terms of number of patents that they published. Luckily, PatentsView provides the total number of patents that a companies have delivered in their entire lifespan and therefore, it was not required to iterate through years to get these statistic. However, the way it works is that number of patents belongs to a certain company can only be acquired if we encounter a patent that belongs to that specific company. For this reason, we tried to iterate through couple of years and hoped to encounter at least a patent published by each of the different companies. Results were convincing since we get all the important patent provider companies that we anticipated to get.
 
@@ -41,7 +47,7 @@ Next, we were curious about which companies has delivered most patents. We aim t
 
 As we can see International Business Machines Corporation (IBM) is the leading company by holding more than 120'000 patents, followed by Samsung Electronics (75'000) and Canon (65'000).
 
-### 1.2 A General Analysis of Country-wise Distribution of Patents
+## 1.2. A General Analysis of Country-wise Distribution of Patents
 
 After companies, we moved into analysis according to countries. We acquired countries by examining inventors. It was the case that multiple inventors might be involved in a a given patent and these inventors might be located in different countries and so, we go through each inventor's country and increased the patent number belonging to this country by 1. It is also important to mention that for the initial analysis, we only examine the patents granted in the last year. (A more detailed investigations are conducted in the later stages of this project.)
 
@@ -57,7 +63,7 @@ As it can be seen from [Figure 3](#last_year_patents_by_country), there is a ver
 *Screenshot 1: The map of Number of Granted Patents in the Last Year*
 
 
-### 1.2 Sector-Wise Analysis of Countries according to CPC Categories
+## 1.3. Sector-Wise Analysis of Countries according to CPC Categories
 
 The Cooperative Patent Classification (CPC) is patent categorization model which has been jointly developed by the European Patent Office (EPO) and the United States Patent and Trademark Office (USPTO).
 
@@ -102,4 +108,4 @@ It is clear from these charts that Germany and Switzerland are much more polyval
 
 With that, we conclude the first part of the project and move into more advanced analysis with sector specific investigations.
 
-## 1. Sector-Specific Analysis of Granted Patents
+## 2. Sector-Specific Analysis of Granted Patents
