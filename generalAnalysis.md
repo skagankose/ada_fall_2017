@@ -57,8 +57,9 @@ After companies, we moved into analysis according to countries. We acquired coun
 
 We also wanted to visualize these findings in a choropleth world map to highlight dispersion granted patents across the countries. In PatensView dataset, country names are coded according to the Alpha-2 ISO norm and to be able to draw the map, it is required a .geojson file that maps these country codes into actual locations. For this purposes, we used take [this](LINK REQUIRED) .geojson file and customized for our purposes.
 
-As it can be seen from [Figure 3](#last_year_patents_by_country), there is a very large gap between countries in terms of number of patents and to be able to have a more descriptive choropleth map, we opted for a logarithmic scale. The screenshot of the resulting map can be seen in the following screenshot and we served the interactive visualization of this map in [here](html/patents_by_country.html).
+As it can be seen from [Figure 3](#last_year_patents_by_country), there is a very large gap between countries in terms of number of patents and to be able to have a more descriptive choropleth map, we opted for a logarithmic scale. The resulting map can be seen in the following screenshot and we served the interactive visualization of this map in [here](html/patents_by_country.html).
 
+<a id="patents_by_country"></a>
 ![Image](img/patents_by_country.png)
 *Screenshot 1: The map of Number of Granted Patents in the Last Year*
 
