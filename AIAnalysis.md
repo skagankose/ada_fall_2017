@@ -25,7 +25,7 @@ In our initial analysis we observe that, the patent dataset has a field for numb
 Note that actual patents are not only from US, just the number of citation that a particular patent have is calculated only by citation of other US patents.
 
 | **ID** | **Title** | **Citations** | **Country** | **Organization** | **Inventor Name** | **Year** |
-| ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ |
+| ------ | ------ | ------ | ------ | ------ | ------ | ------ |
 | 5933822 | Methods for an information retrieval... | 599 | US | Microsoft Corporation | Lisa C. Braden-Harder | 1999 |
 | 6055573 | Communicating with a computer based... | 598 | US | SuperMarkets Online, Inc. | Will H. Gardenswartz | 2000 |
 | 6363160 | Interface using pattern recognition and tracking | 456 | US | Intel Corporation | Boon-Lock Yeo | 2002 |  
