@@ -7,12 +7,12 @@ Most part of the project is structured around these three sectors. We study them
 
 # Dataset
 
-The dataset that we used in this study is acquired from (PatentsView)[http://www.patentsview.org]. PatentsView provides an highly convenient API that allowed us to search for patents according to many different criteria such as to a patent title, inventor or locations. For instance, it is possible to look for how many patents in a specific topic were delivered by IBM in California from 2012 and 2015.
+The dataset that we used in this study is acquired from [PatentsView](http://www.patentsview.org). PatentsView provides an highly convenient API that allowed us to search for patents according to many different criteria such as to a patent title, inventor or locations. For instance, it is possible to look for how many patents in a specific topic were delivered by IBM in California from 2012 and 2015.
 
 Here is a query example that returns the patent_number for patens granted after 2007.
-(http://www.patentsview.org/api/patents/query?q={"_gte":{"patent_date":"2007-01-04"}}&f=["patent_number"])[http://www.patentsview.org/api/patents/query?q={"_gte":{"patent_date":"2007-01-04"}}&f=["patent_number"]]_ 
+[http://www.patentsview.org/api/patents/query?q={"_gte":{"patent_date":"2007-01-04"}}&f=["patent_number"]](http://www.patentsview.org/api/patents/query?q={"_gte":{"patent_date":"2007-01-04"}}&f=["patent_number"])_
 
-In addition to PatentsView dataset, we used various other resources to get certain required informations for the second part of our analysis such as university rankings from (Times Higher Education)[], defence industry rankings from (Defense News)[] and the list of top technology companies from (Fortune)[]...
+In addition to PatentsView dataset, we used various other resources to get certain required informations for the second part of our analysis such world defence industry rankings from [Defense News](http://people.defensenews.com/top-100/) and the list of top technology companies from [Fortune](http://fortune.com/2015/06/13/fortune-500-tech/)...
 
 # Methodology
 
@@ -22,10 +22,39 @@ In the second part of the project, we aimed to dive deeper into analysis and exp
 
 It is important to note that all the given numbers refers to granted patents approved by the USPTO (United State Patent and Trademark Office) and therefore, the statistics highlighted do not cover all patent applications around the world, but since USPTO is the most popular patent company, we believe that our study can produce accurate results.
 
-## General Picture of Granted Patents
+## 1. General Picture of Granted Patents
 
-The research ideas that we investigated in this section can be listed as follows.
+### 1.1 Evolution of Granted Patents Count throughout Years
 
-1. Evolution of granted patent throughout years
-2. Number of granted patents by countries and companies
-3. Analysis of top countries delivering patents according to CPC categories
+First of all, we wanted display the evolution of granted patents during the last decade in order to see the general trend. Since, the API cannot return more than 100'000 patents in one request, we needed to collect the number of patents month by month and aggregated the results by years. The resulting line graph can be seen in the following figure.
+
+![Image](img/number_of_patents_by_years.png)
+*Figure 1: Number of Granted Patents through Years*
+
+It is clear from this figure that granted patents has dramatically surged in numbers. This situation is expected since the amount of researches has also increased all over the world in 21st century and continue to do so.
+
+### 1.2 Company-wise Analysis of Patents
+
+Next, we were curious about which companies has delivered most patents. We aim to display the top companies in terms of number of patents that they published. Luckily, PatentsView provides the total number of patents that a companies have delivered in their entire lifespan and therefore, it was not required to iterate through years to get these statistic. However, the way it works is that number of patents belongs to a certain company can only be acquired if we encounter a patent that belongs to that specific company. For this reason, we tried to iterate through couple of years and hoped to encounter at least a patent published by each of the different companies. Results were convincing since we get all the important patent provider companies that we anticipated to get which can be seen in Figure 4.
+
+![Image](img/number_of_patents_by_companies.png)
+*Figure 3: Number of Granted Patents Belonging to Companies*
+
+As we can see International Business Machines Corporation (IBM) is the leading company by holding more than 120'000 patents, followed by Samsung Electronics (75'000) and Canon (65'000).
+
+### 1.2 A General Analysis of Country-wise Distribution of Patents
+
+After companies, we moved into analysis according to countries. We acquired countries by examining inventors. It was the case that multiple inventors might be involved in a a given patent and these inventors might be located in different countries and so, we go through each inventor's country and increased the patent number belonging to this country by 1. It is also important to mention that for the initial analysis, we only examine the patents granted in the last year. (A more detailed investigations are conducted in the later stages of this project.)
+
+![Image](img/last_year_patents_by_country.png)
+*Figure 2: Number of Granted Patents in the Last Year by Countries*
+
+We also wanted to visualize these findings in a choropleth world map to highlight dispersion granted patents across the countries. In PatensView dataset, country names are coded according to the Alpha-2 ISO norm and to be able to draw the map, it is required a .geojson file that maps these country codes into actual locations. For this purposes, we used take (this)[LINK REQUIRED] .geojson file and customized for our purposes.
+
+As it can be seen from Figure 2, there is a very large gap between countries in terms of number of patents and to be able to have a more descriptive choropleth map, we opted for a logarithmic scale. The screenshot of the resulting map can be seen in Figure 3 and we served the interactive visualization of this map in [here](html/patents_by_country.html).
+
+![Image](img/patents_by_country.png)
+*Figure 3: The map of Number of Granted Patents in the Last Year*
+
+
+### 1.2 Sector-Wise Analysis of Countries according to CPC Categories
