@@ -1,7 +1,7 @@
 
 # Introduction
 
-The purpose of our project is to extract valuable insights about research trends around the world and shed some light on popular technologies by analyzing granted patents throughout years. In first part of the project, we start by giving certain summary and statistics about patents according to countries and companies. We analyze the evolution of granted patents over time with the purpose of extracting meaningful informations relative to various sectors. In the second part of the project, we dive deeper into the analysis and explore some of the most popular technology sectors of this century: Energy, FinTech and Artificial Intelligence. Most part of the project is structured around these three sectors. We study them comprehensively in order to understand their evolution over time. 
+The purpose of our project is to extract valuable insights about research trends around the world and shed some light on popular technologies by analyzing granted patents throughout years. In first part of the project, we start by giving certain summary and statistics about patents according to countries and companies. We analyze the evolution of granted patents over time with the purpose of extracting meaningful informations relative to various sectors. In the second part of the project, we dive deeper into the analysis and explore some of the most popular technology sectors of this century: Energy, FinTech and Artificial Intelligence. Most part of the project is structured around these three sectors. We study them comprehensively in order to understand their evolution over time.
 
 # Dataset
 
@@ -13,11 +13,11 @@ In addition to PatentsView dataset, various other resources were used to get cer
 
 This section briefly mention about main tools and libraries used for the project. Programming language used was Python since it has all of the required libraries needed to conduct this study. Some of the libraries can be listed as follows: [Pandas](https://pandas.pydata.org) which provides high-performance, easy-to-use data structures and data analysis tools, [Matplotlib](https://matplotlib.org) which is a plotting library that can produce high quality figures in a variety of formats across platforms, [Seaborn](https://seaborn.pydata.org) which is a more advanced Python visualization library based on Matplotlib, [Beautiful](https://en.wikipedia.org/wiki/Beautiful_Soup_(HTML_parser)) Soup which is a package to for scraping and parsing HTML and XML documents and [Folium](https://folium.readthedocs.io/en/latest/#) which is a Python library to manipulate interactive [Leaflet](http://leafletjs.com) maps.
 
-[Jupyter Notebook](http://jupyter-notebook.readthedocs.io) was used as the main development environment since it contains a highly convenient way of creating and sharing documents. This developping tool contains live code, equations, visualizations and narrative text.
+[Jupyter Notebook](http://jupyter-notebook.readthedocs.io) was used as the main development environment since it contains a highly convenient way of creating and sharing documents. This developing tool contains live code, equations, visualizations and narrative text.
 
 # Methodology
 
-The project can be separated into two parts. In the first part, a more general research is conducted to be able to see the overall picture of granted patents. The characteristic of granted patents was sutudied by observing their numbers through years and associate them with countries and companies. A sector-wise overview of granted patens (according to Cooperative Patent Classification categories) is provided in this study.
+The project can be separated into two parts. In the first part, a more general research is conducted to be able to see the overall picture of granted patents. The characteristic of granted patents was studied by observing their numbers through years and associate them with countries and companies. A sector-wise overview of granted patens (according to Cooperative Patent Classification categories) is provided in this study.
 
 In the second part of the project, a deeper analysis on the most popular technology sectors in today's world is conducted. The sector of interest are grouped as energy, financial technologies and artificial intelligence. Most part of the project is structured around these three sectors. Their evolution over the time and relationship with companies/countries is reviewed in this section.
 
@@ -38,7 +38,7 @@ It is clear from this figure that granted patents has dramatically surged in num
 
 ## 1.2. Company-wise Analysis of Patents
 
-The following figure shed the light on which companie publish most patents over the world
+The following figure shed light on companies which have high number of patents.
 
 <a id="number_of_patents_by_companies"></a>
 ![Image](img/number_of_patents_by_companies.png)
@@ -48,7 +48,7 @@ As we can see International Business Machines Corporation (IBM) is the leading c
 
 ## 1.3. Country-wise Analysis of Patents
 
-In this part, patents application classified by countries is studied. It is possible that multiple inventors are involved in a given patent. Moreover, these inventors might be located in different countries. Therefore, went through each inventors in a patent and assigned one point for a country if at least one inventor belongs to this country. It is also important to mention that for the initial analysis, we only examine the patents granted in the last year. 
+In this part, patents application classified by countries is studied. It is possible that multiple inventors are involved in a given patent. Moreover, these inventors might be located in different countries. Therefore, went through each inventors in a patent and assigned one point for a country if at least one inventor belongs to this country. It is also important to mention that for the initial analysis, we only examine the patents granted in the last year.
 
 <a id="last_year_patents_by_country"></a>
 ![Image](img/last_year_patents_by_country.png)
@@ -82,7 +82,7 @@ CPC categories are indicated in the following table.
 
 *Table 1: Patent Categories according to Cooperative Patent Classification*
 
-In that section, patents are studied by CPC sectors and sorted by top countries. The analysis highligh the granted patent within the last year. Resulting graphs are as follow:
+In that section, patents are studied by CPC sectors and sorted by top countries. The analysis highlight the granted patent within the last year. Resulting graphs are as follow:
 
 ![Image](img/patents_by_categories.png)
 *Figure 4: Number of Granted Patents in the Last Year according to CPC Categories with Bar Charts*
@@ -93,7 +93,7 @@ Only some of the figures were drawn because of space concerns. All the figures c
 ![Image](img/patents_by_categories_stacked.png)
 *Figure 5: Number of Granted Patents in the Last Year according to CPC Categories with a Stacked Chart*
 
-To reveal more insights related to patent characteristics, spider charts were used to shed the light on which contry is focus on which sector. Below, some figures for certain countries of interest are displayed (United States, Japan, Germany and Switzerland). The rest can be obtained from our [notebook](LINK REQUIRED).
+To reveal more insights related to patent characteristics, spider charts were used to shed the light on which country is focus on which sector. Below, some figures for certain countries of interest are displayed (United States, Japan, Germany and Switzerland). The rest can be obtained from our [notebook](LINK REQUIRED).
 
 <a id='patents_by_categories_spider'></a>
 ![Image](img/patents_by_categories_spider.png)
@@ -106,7 +106,7 @@ It is clear from these charts that Germany and Switzerland are much more polyval
 
 This part aims to study the evolution of granted patents by sector of interest (Energy, Fintech and AI).
 
-To retrieve the patents from the Patentsview database, keywords and IPC symbols are used. IPC symbols allows to classify patents from different sector. For example the IPC symbol F01B 3 (F = Mechanical engineering, lighting, heating, weapon, 01 = Machines or engines in general, B = Steam engines, 3 = Reciprocating-pison machines or engines with cylender axes). Keywords allows us to confirm that the patent technology from IPC correspond exactly to what we are looking for.
+To retrieve the patents from the Patentsview database, keywords and IPC symbols are used. IPC symbols allows to classify patents from different sector. For example the IPC symbol F01B 3 (F = Mechanical engineering, lighting, heating, weapon, 01 = Machines or engines in general, B = Steam engines, 3 = Reciprocating-pison machines or engines with cylinder axes). Keywords allows us to confirm that the patent technology from IPC correspond exactly to what we are looking for.
 
 In order to help us to find the IPC symbols corresponds to which sector, the website http://www.wipo.int/classifications/ipc/en/ is used. IPC symbols are searched separately to confirm they match with our sector criterium.
 
@@ -144,7 +144,7 @@ Wind energy has more patents than solar energy in 2007/2008. However if we sum u
 
 *Figure 10: Evolution of hydropower technology*
 
-Hydro does not have a large number of patents. Howerver, we could expect that this technology is outdated since dams were built many years ago (at least in Switzerland). In fact, as the other energy sectors and the number of patent in general, hydroelectric technology also evolved fast in the past.
+Hydro does not have a large number of patents. However, we could expect that this technology is outdated since dams were built many years ago (at least in Switzerland). In fact, as the other energy sectors and the number of patent in general, hydroelectric technology also evolved fast in the past.
 
 <a id='patents_wave_and_tidal'></a>
 ![Image](img/patents_wave_and_tidal.png)
@@ -155,7 +155,7 @@ As we can observe, wave and tidal turbines were irrelevant in 2007. In the next 
 
 <a id='patents_carbon_capture'></a>
 ![Image](img/patents_carbon_capture.png)
-                        
+
 *Figure 12: Evolution of carbon capture technology*
 
 Carbon capture almost didn't exist in 2007 but increased greatly in the past years although the number of patents is very volatile
@@ -165,14 +165,14 @@ Carbon capture almost didn't exist in 2007 but increased greatly in the past yea
 
 *Figure 13: Evolution of coal and gas technology*
 
-As the other sector, fossil energy had an increase in research from 2013 to 2015. However, it decreases in 2016. We can expect the trend to contimue in that direction.
+As the other sector, fossil energy had an increase in research from 2013 to 2015. However, it decreases in 2016. We can expect the trend to continue in that direction.
 
 <a id='patents_nuclear'></a>
 ![Image](img/patents_nuclear.png)
 
 *Figure 14: Evolution of nuclear technology*
 
-The number of patents for nuclear energy also blew up in from 2013 to 2016. Even the nuclear catastrophe that occured in Fukushima didn't change the number of patent applications in that area.                       
+The number of patents for nuclear energy also blew up in from 2013 to 2016. Even the nuclear catastrophe that occurred in Fukushima didn't change the number of patent applications in that area.                       
 
 ### Comparison between renewable energy vs coal and gas technologies
 
@@ -185,7 +185,7 @@ The plot above shows clearly that there were the same number of patents between 
 
 ### Comparison of growth in number of patents
 
-The evolution of granted patent in energy can be compared between each other for the past 10 years. In order to achieve this pupose, the growth of patents per year was computed according to the folowing formula :
+The evolution of granted patent in energy can be compared between each other for the past 10 years. In order to achieve this purpose, the growth of patents per year was computed according to the following formula :
 
 \begin{equation*}
 Growth  = \frac{nb\ patents\ year\ i+1\ -\ nb\ patents\ year\ i}{nb\ patent\ year\ i}
@@ -198,22 +198,22 @@ Below, the plot showing the average growth in patent application is displayed. T
 
 *Figure 16: Average growth for the different technologies*
 
-The bar plots above highlight the fact that solar energy is a trend nowadays. Carbon capture is a very new technology that is espected to evolve very fast in the future. However, as we can see in the table containing the number of patent, this sector does not contain many patents and the standard deviation is large. Therefore the future of this technology is uncertain. By looking at the 3 average growths on the right, it can be observed that renewable energy has evolved more in the past than fossil energy. Despite the fear of nuclear energy, the number of patents in that sector still exploded and evolved faster espessially in the past few years. However, the number of patents in renewable and fossil energy remains much larger. It is also important to note that the patents in nuclear energy might also include the research to make the technology safer.
+The bar plots above highlight the fact that solar energy is a trend nowadays. Carbon capture is a very new technology that is expected to evolve very fast in the future. However, as we can see in the table containing the number of patent, this sector does not contain many patents and the standard deviation is large. Therefore the future of this technology is uncertain. By looking at the 3 average growths on the right, it can be observed that renewable energy has evolved more in the past than fossil energy. Despite the fear of nuclear energy, the number of patents in that sector still exploded and evolved faster especially in the past few years. However, the number of patents in renewable and fossil energy remains much larger. It is also important to note that the patents in nuclear energy might also include the research to make the technology safer.
 
 ### Correlation matrix
 
-A study of the relation between the growth in the different sectors can be studied. For exemple, it can shown that when the hydro sector grows, the wind sector will grows as well. A correlation matrix can be computed to highlight these relations. The more the correlation is close to one, the more both sectors are growing together.
+A study of the relation between the growth in the different sectors can be studied. For example, it can shown that when the hydro sector grows, the wind sector will grows as well. A correlation matrix can be computed to highlight these relations. The more the correlation is close to one, the more both sectors are growing together.
 
 <a id='correl_matrix_energy'></a>
 ![Image](img/correl_matrix_energy.png)
 
 *Figure 17: correlation matrix between the different technologies*
 
-It can be observed that the technology in solar termic and photovoltaic evolve together. Wind and Hydro technologies seem to be highly correlated. We could suppose that those technology are complementary and that governements encorage investments in both technologies at the same time. Tidal and wave as well as carbon capture are not correlated to any other energy secors. It can be explained that those technologies are new compare to the others and therefore more volatile. It is interesting to note that carbon and gas technologies have high correlation with nuclear energy. If some countries are not focus on green energy, the investment in these 2 sectors will be fostered. With a correlation of 0.97 between the wind energy and renewable energy in general, it can be deducted that wind energy represents the general trend in green energy (This is the sector with most of the patents).
+It can be observed that the technology in solar thermic and photovoltaic evolve together. Wind and Hydro technologies seem to be highly correlated. We could suppose that those technology are complementary and that governments encourage investments in both technologies at the same time. Tidal and wave as well as carbon capture are not correlated to any other energy sectors. It can be explained that those technologies are new compare to the others and therefore more volatile. It is interesting to note that carbon and gas technologies have high correlation with nuclear energy. If some countries are not focus on green energy, the investment in these 2 sectors will be fostered. With a correlation of 0.97 between the wind energy and renewable energy in general, it can be deducted that wind energy represents the general trend in green energy (This is the sector with most of the patents).
 
 ### Comparisons of renewable energy patents between companies and countries
 
-For this next study, only the patents between 2010 and 2016 will be retreived from the database. Indeed, it takes less compilation time and shows a sufficient ammount of date for companies and countries.
+For this next study, only the patents between 2010 and 2016 will be retrieved from the database. Indeed, it takes less compilation time and shows a sufficient amount of date for companies and countries.
 
 <a id='word_map_renewable'></a>
 ![Image](img/word_map_renewable.png)
@@ -222,18 +222,18 @@ For this next study, only the patents between 2010 and 2016 will be retreived fr
 
 This map shows the number of USPTO patents application around the world
 
-The next study cassifies each technology by countries
+The next study classifies each technology by countries
 
 <a id='countries_solar'></a>
 ![Image](img/countries_solar.png)
 
 *Figure 19: solar energy by countries*
-                        
+
  <a id='countries_wind_hydro'></a>
 ![Image](img/countries_wind_hydro.png)
 
 *Figure 20: wind energy and hydro energy by countries*
-                        
+
  <a id='countries_tidal_and_wave_carbon'></a>
 ![Image](img/countries_tidal_and_wave_carbon.png)
 
@@ -243,26 +243,26 @@ Every technologies are dominated by the US, especially for solar thermic, hydro,
 
 **Solar Photovoltaic**: Japan, Korea and Taiwan follows the US in the ranking. It can be note that their investment in this sector highly increased in the past 3 years. Germany, France and China arrive after in the ranking
 
-**Solar Themic**: US and Japan are the first for this technology. However, European countries like Germany or Spain are 3rd and 4th with a big investment in that sector in 2015.
+**Solar Thermic**: US and Japan are the first for this technology. However, European countries like Germany or Spain are 3rd and 4th with a big investment in that sector in 2015.
 
-**Wind**: Germany outperforms Japan in that sector and takes the second rank. We can also note the big effort of Denmark in that area with a 4th rank. The politic of developping wind energy in those 2 European countries explains their good performance
+**Wind**: Germany outperforms Japan in that sector and takes the second rank. We can also note the big effort of Denmark in that area with a 4th rank. The politic of developing wind energy in those 2 European countries explains their good performance
 
 **Hydro**: This sector is highly dominated by the US followed by Japan and Germany. Canada is ranked 4th with 62% of its energy produce by hydroelectricity.
 
-**Tidal and Wave**: This technology is highliy dominated by the US. The UK becomes second with a high investment in 2014. We can notice that European countries like France, Spain, Italy, Norway and Finland are also investing in this technology, especially the past few years.
+**Tidal and Wave**: This technology is highly dominated by the US. The UK becomes second with a high investment in 2014. We can notice that European countries like France, Spain, Italy, Norway and Finland are also investing in this technology, especially the past few years.
 
 **Carbon Capture**: Japan and Korea are at the forefront of the research for this technology after the US and invested a lot during 2016 which is auspicious for the future.
 
-**Renewable energy in gerneral**: The ranking follows the general trend of all the specific renewable energy with the US fist, followed by Japan, Germany, Korea and Denmark. We can note that China which is a big country is only 9th and Russie do not even appear in the top 10. (This part is only available in the notebook to not overload the website)
+**Renewable energy in general**: The ranking follows the general trend of all the specific renewable energy with the US fist, followed by Japan, Germany, Korea and Denmark. We can note that China which is a big country is only 9th and Russia do not even appear in the top 10. (This part is only available in the notebook to not overload the website)
 
 
-The next study cassifies each technology by companies
+The next study classifies each technology by companies
 
 <a id='companies_solar_photo'></a>
 ![Image](img/companies_solar_photo.png)
 
 *Figure 22: solar photovoltaic energy by companies*
-                        
+
 <a id='companies_solar_thermal'></a>
 ![Image](img/companies_solar_thermal.png)
 
@@ -272,7 +272,7 @@ The next study cassifies each technology by companies
 ![Image](img/companies_wind.png)
 
 *Figure 24: wind by companies*
-                        
+
 <a id='companies_hydro'></a>
 ![Image](img/companies_hydro.png)
 
@@ -282,7 +282,7 @@ The next study cassifies each technology by companies
 ![Image](img/companies_tidal_and_wave.png)
 
 *Figure 26: tidal and wave by companies*
-                        
+
 <a id='companies_carbon_capture'></a>
 ![Image](img/companies_carbon_capture.png)
 
@@ -292,15 +292,15 @@ Different companies are leaders for different sectors:
 
 **Solar Photovolataic**: SunPower Corporation is first, it is a solar panel supplier based in San Jose, CA and is a subsidiary from Total. This company is known for their highly performant solar panel. Then comes the multinational US company IBM and the Japanese company Sharp.
 
-**Solar Thermic**: SunPower Corporation is also first for the thermic solar panel followed closely by Abengoa which is a spanish company. It confirms the fact that Spain arrives 4th in the ranking for solar termic panels.
+**Solar Thermic**: SunPower Corporation is also first for the thermic solar panel followed closely by Abengoa which is a Spanish company. It confirms the fact that Spain arrives 4th in the ranking for solar thermic panels.
 
-**Wind**: The multinational US company GE active in many energy sector is the first patent company for wind. Vestas which is a danish company is 3nd. The latter is only active in wind energy and is highly responsible for the good ranking for Denmark in that area.
+**Wind**: The multinational US company GE active in many energy sector is the first patent company for wind. Vestas which is a danish company is 3rd. The latter is only active in wind energy and is highly responsible for the good ranking for Denmark in that area.
 
 **Hydro**: Caterpilar dominate the market in terms of Hydro patents. Even if their main area is construction machine, they also provide equipments for hydropower plants.
 
-**Tidal and Wave**: The market is shared by many companies in that sector and we can note that none of them are multinational but specialised in this sector. Many of them started their invesments in 2015/2016. Therefore we can conclude that this area has a big potential. The first company (Ocean Power technology) is from the US, the second (Voith) is from Germany and the third is the National Taiwan University.
+**Tidal and Wave**: The market is shared by many companies in that sector and we can note that none of them are multinational but specialised in this sector. Many of them started their investments in 2015/2016. Therefore we can conclude that this area has a big potential. The first company (Ocean Power technology) is from the US, the second (Voith) is from Germany and the third is the National Taiwan University.
 
-**Carbon Capture**: this sector is dominated by Samsung. We can note that they provided most of the patents in the past 2 years (2015/2016). Therefore we can conclude that they are inversting a lot in that technology and are expected to grow even more in that sector. The same conclusion can be drawn for the japanese company Toshiba who started to invest in Carbon Capture in 2014.
+**Carbon Capture**: this sector is dominated by Samsung. We can note that they provided most of the patents in the past 2 years (2015/2016). Therefore we can conclude that they are investing a lot in that technology and are expected to grow even more in that sector. The same conclusion can be drawn for the japanese company Toshiba who started to invest in Carbon Capture in 2014.
 
 
 # 2.2. FinTech Patents Analysis
@@ -359,7 +359,7 @@ We now focus on the blockchain technology. According to ‘the Economist’, blo
 
 ## 2.3. Artificial Intelligence Patents Analysis
 
-In this section of the project, we anaylze patents related to Artificila Intelligence (AI) in a comprehensive manner. Patents related to AI from 1976 until 2017 are gathered along with informations about their inventors, citations, companies and belonging countries.
+In this section of the project, we analyze patents related to Artificial Intelligence (AI) in a comprehensive manner. Patents related to AI from 1976 until 2017 are gathered along with informations about their inventors, citations, companies and belonging countries.
 
 The method we followed to acquire AI patents is two-folded. First, we only consider IPC category "G06" which corresponds to "Computing; Calculating; Counting". According to our researches this is the main category where AI patents fall under. Keywords relative to AI are gathered from different sources[4](https://phrasee.co/ultimate-glossary-artificial-intelligence-terms/) [5](https://business.twitter.com/en/blog/artificial-intelligence-terms-marketers-need-to-know.html) and can be accessed from [here](data/ai_keywords.txt). We consider that patent is related to AI if its description contains one of these keywords. Also, more information related to IPC categories can be found [here](http://www.wipo.int/classifications/ipc/en/).
 
@@ -384,7 +384,7 @@ We rank the AI patents by Citation number.
 | 5933822 | Methods for an information retrieval... | 599 | US | Microsoft Corporation | Lisa C. Braden-Harder | 1999 |
 | 6055573 | Communicating with a computer based... | 598 | US | SuperMarkets Online, Inc. | Will H. Gardenswartz | 2000 |
 | 6363160 | Interface using pattern recognition and tracking | 456 | US | Intel Corporation | Boon-Lock Yeo | 2002 |  
-| 6430539 | Predictive modeling of consumer financial behavior | 392 | US | HNC Software, Inc. | Ted E. Dunning | 2002 |
+| 6430539 | Predictive modelling of consumer financial behaviour | 392 | US | HNC Software, Inc. | Ted E. Dunning | 2002 |
 | 8035624 | Computer vision based touch screen | 331 | US | Intellectual Ventures I LLC | Philip L. Gleckman | 2011 |
 
 *Table 2.3.2: Sample rows from Artificial Intelligence Patents Rankings by Citation Numbers*
@@ -395,19 +395,19 @@ Looking at the top cited patents, we see that they can be related to several usa
 
 We know that AI related researches has gone through ups and downs during the past decades, can we observe this pattern by analysing the number of patents granted through years (in 1900s)? AI is also one of the most popular area of research in today's world. Will these popularity fade away like it did in the past or will it persist this time?
 
-To answer this question, we calculated number of AI related patents for each year from 1976 until 2016. 
+To answer this question, we calculated number of AI related patents for each year from 1976 until 2016.
 
 <a id='number_ai_patents_by_year'></a>
 ![Image](img/number_ai_patents_by_year.png)
 *Figure 35: Number of Artificial Intelligence Related Patents in Years*
 
-AI patents has known an important increase in both 1986 and 2006, whereas the growth remained farily steady elsewhere. But considering that overall number of patents has also increased over years, We need to check the percentage of AI patents among all patents over time (Figure 2.3.2) in order to be able to see the whole picture and make a more complete analysis.  
+AI patents has known an important increase in both 1986 and 2006, whereas the growth remained fairly steady elsewhere. But considering that overall number of patents has also increased over years, We need to check the percentage of AI patents among all patents over time (Figure 2.3.2) in order to be able to see the whole picture and make a more complete analysis.  
 
 <a id='percentage_ai_patents_by_year'></a>
 ![Image](img/percentage_ai_patents_by_year.png)
 *Figure 36: Percentage of Artificial Intelligence Related Patents in Years*
 
-There are couple of observations worth mentioning about these figures. 
+There are couple of observations worth mentioning about these figures.
 
 We can observe a decline from 1976. AI was already popular during the 1960s especially after Artificial Neural Networks were born, however and its popularity started to decline around 1970s because of insufficient computing power.
 
@@ -425,7 +425,7 @@ Top inventors with highest number of AI patents in a sorted order can be seen in
 
 **[Philip Yu](https://en.wikipedia.org/wiki/Philip_S._Yu)** is an American computer scientist and Professor in Information Technology at the University of Illinois at Chicago, known for his work in the field of data mining[6].
 
-**[Dharmendra Modha](https://en.wikipedia.org/wiki/Dharmendra_Modha)** is an Indian American manager and lead researcher of the Cognitive Computing group at IBM Almaden Research Center. He is known for his pioneering works in Artificial Intelligence and Mind Simulation[7].
+**[Dharmendra Modha](https://en.wikipedia.org/wiki/Dharmendra_Modha)** is an Indian American manager and lead researcher of the Cognitive Computing group at IBM Almaden Research Centre. He is known for his pioneering works in Artificial Intelligence and Mind Simulation[7].
 
 Now, we move into a company-wise analysis of AI related patents.
 
@@ -494,9 +494,9 @@ Similar to [the map we draw](#patents_by_country) in the first part of the proje
 
 <a id="ai_patents_by_country"></a>
 ![Image](img/ai_patents_by_country.png)
-*Figure 42: Dsitribution of AI Related Patents around the world*
+*Figure 42: Distribution of AI Related Patents around the world*
 
-From this map, it is clear that number of AI related patents has increased signiﬁcantly over the years. We also, observe that United States and Japan takes the lead again and most of these countries are the ones known for their technological advancement. It is worth mentioning that although Israel (IL) is the 5th country in AI related patents ranking, which is quite impressive for such a 'new born country'. This situation is exceedingly interesting since Isreal is one of the most impactful countries in the Middle-east and AI researches might have an effect on that.
+From this map, it is clear that number of AI related patents has increased signiﬁcantly over the years. We also, observe that United States and Japan takes the lead again and most of these countries are the ones known for their technological advancement. It is worth mentioning that although Israel (IL) is the 5th country in AI related patents ranking, which is quite impressive for such a 'new born country'. This situation is exceedingly interesting since Israel is one of the most impactful countries in the Middle-east and AI researches might have an effect on that.
 
 Last question we wanted to answer is related to a recent statement made by *Putin*: “the nation that leads in artificial intelligence will be the ruler of the world”[1].
 
@@ -504,7 +504,7 @@ Last question we wanted to answer is related to a recent statement made by *Puti
 
 To be able to answer this question we needed a reliable ranking for countries' defense industries. We though that using [Global Defense Companies 100 list](http://people.defensenews.com/top-100/)[2] (from Defense News), to extract the revenues of defense companies along with belonging countries, then grouped these companies by countries and summed up their revenues to have a reasonable estimation for the defense industry rankings of among countries. The ranking (top 10) we calculated can be seen in Table (2.3.4).
 
-| **Country** | **Revenue (in Milions)** |
+| **Country** | **Revenue (in Millions)** |
 |------|------|
 | US | 220693 |
 | GB | 40529 |
@@ -530,7 +530,7 @@ One other point to mention about our choice of implementation is that unlike com
 
 *From the figure, the frequency of red dots (countries in top 100 Defense News) increasing as the number of the AI patents increase.*
 
-Again, it is clear that countries that have more AI patents are likely to be in top 100 Defense News list. There is total of 47 countries present in the AI patent list and 16 of them were also present in top 100 Defense News list. 
+Again, it is clear that countries that have more AI patents are likely to be in top 100 Defense News list. There is total of 47 countries present in the AI patent list and 16 of them were also present in top 100 Defense News list.
 
 As a result, we can actually confirm that who are making more revenue from their companies in defense industry (meaning that they have better defense industries) are also the ones which have more AI related patents. So, as Putin stated, it seems that indeed, countries who invest in AI are the potential leaders of the future. However, it also seems that Putin won’t be able to make it to the list ;)
 
