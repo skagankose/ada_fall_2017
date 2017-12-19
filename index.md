@@ -2,44 +2,44 @@
 
 # Introduction
 
-The purpose of our project is to extract valuable insights about research trends around the world and shed some light on popular technologies by analyzing granted patents throughout years. In first part of the project, we start by giving certain summary and statistics about patents according to countries and companies. We wanted analyze the evolution of granted patents over time with the purpose of extracting meaningful informations relative to various sectors. In the second part of the project, we to dive deeper in analysis and explore some of the most popular technology sectors of this century. More specifically, the sector we are interested in are energy, financial technologies and artificial intelligence. Most part of the project is structured around these three sectors. We study them comprehensively in order to understand their evolution in the time and reveal their relationships with belonging companies and countries.
+The purpose of our project is to extract valuable insights about research trends around the world and shed some light on popular technologies by analyzing granted patents throughout years. In first part of the project, we start by giving certain summary and statistics about patents according to countries and companies. We wanted analyze the evolution of granted patents over time with the purpose of extracting meaningful informations relative to various sectors. In the second part of the project, we to dive deeper in analysis and explore some of the most popular technology sectors of this century. More specifically, the sector we are interested in are energy, financial technologies and artificial intelligence. Most part of the project is structured around these three sectors. The latters were studied in order to understand their evolution in the time and reveal their relationships with belonging companies and countries.
 
 # Dataset
 
-The dataset that we used in this study is acquired from [PatentsView](http://www.patentsview.org). PatentsView provides an highly convenient API that allowed us to search for patents according to many different criteria such as to a patent title, inventor or locations. For instance, it is possible to look for how many patents in a specific topic were delivered by IBM in California from 2012 and 2015.
+The dataset used in this study is acquired from [PatentsView](http://www.patentsview.org). PatentsView provides an highly convenient API that allowed us to search for patents according to many different criteria such as to a patent title, inventor or locations. For instance, it is possible to look for how many patents in a specific topic were delivered by IBM in California from 2012 and 2015.
 
-In addition to PatentsView dataset, we used various other resources to get certain required informations for the second part of our analysis such [defence industry rankings](http://people.defensenews.com/top-100/)[2] from Defense News  and the [list of top technology companies](http://fortune.com/2015/06/13/fortune-500-tech/)[3] from Fortune.
+In addition to PatentsView dataset, various other resources were used to get certain required informations for the second part of the analysis such as [defence industry rankings](http://people.defensenews.com/top-100/)[2] Defense News  and the [list of top technology companies](http://fortune.com/2015/06/13/fortune-500-tech/)[3] from Fortune.
 
 # Tools and Libraries
 
-We want to briefly mention about main tools and libraries that we used for the project. Programming language we used was Python since it has all of the required libraries needed to conduct this study. Some of the libraries we used can listed as follows: [Pandas](https://pandas.pydata.org) which provides high-performance, easy-to-use data structures and data analysis tools, [Matplotlib](https://matplotlib.org) which is a plotting library that can produce high quality figures in a variety of formats across platforms, [Seaborn](https://seaborn.pydata.org) which is a more advanced Python visualization library based on Matplotlib, [Beautiful](https://en.wikipedia.org/wiki/Beautiful_Soup_(HTML_parser)) Soup which is a package to for scraping and parsing HTML and XML documents and [Folium](https://folium.readthedocs.io/en/latest/#) which is a Python library to manipulate interactive [Leaflet](http://leafletjs.com) maps.
+This section briefly mention about main tools and libraries used for the project. Programming language used was Python since it has all of the required libraries needed to conduct this study. Some of the libraries can be listed as follows: [Pandas](https://pandas.pydata.org) which provides high-performance, easy-to-use data structures and data analysis tools, [Matplotlib](https://matplotlib.org) which is a plotting library that can produce high quality figures in a variety of formats across platforms, [Seaborn](https://seaborn.pydata.org) which is a more advanced Python visualization library based on Matplotlib, [Beautiful](https://en.wikipedia.org/wiki/Beautiful_Soup_(HTML_parser)) Soup which is a package to for scraping and parsing HTML and XML documents and [Folium](https://folium.readthedocs.io/en/latest/#) which is a Python library to manipulate interactive [Leaflet](http://leafletjs.com) maps.
 
-It also needs emphasizing that we've used [Jupyter Notebook](http://jupyter-notebook.readthedocs.io) as the main development environment since it a highly convenient way of creating and sharing documents that contain live code, equations, visualizations and narrative text.
+[Jupyter Notebook](http://jupyter-notebook.readthedocs.io) was used as the main development environment since it contains a highly convenient way of creating and sharing documents. This developping tool contains live code, equations, visualizations and narrative text.
 
 # Methodology
 
-The project can be separated into two parts. In the first part, we conducted a more general research to be able to see the overall picture related to granted patents. We tried to analyze the characteristic of granted patents by observing number of patent through years and associating them with countries and companies. We also give a generic sector-wise overview of granted patens (according to Cooperative Patent Classification categories).
+The project can be separated into two parts. In the first part, a more general research is conducted to be able to see the overall picture of granted patents. The characteristic of granted patents was sutudied by observing their numbers through years and associate them with countries and companies. A sector-wise overview of granted patens (according to Cooperative Patent Classification categories) is provided in this study.
 
-In the second part of the project, we aimed to dive deeper into analysis and explore some of the most popular technology sectors in today's world. The sector we examined are grouped as energy, financial technologies and artificial intelligence. Most part of the project is structured around these three sectors. We studied them comprehensively in order to understand their evolution in the time and relationship with companies and countries.
+In the second part of the project, a deeper analysis on the most popular technology sectors in today's world is conducted. The sector of interest are grouped as energy, financial technologies and artificial intelligence. Most part of the project is structured around these three sectors. Their evolution over the time and relationship with companies/countries is reviewed in this section.
 
-It is important to note that all the given numbers refers to granted patents approved by the USPTO (United State Patent and Trademark Office) and therefore, the statistics highlighted do not cover all patent applications around the world, but since USPTO is the most popular patent company, we believe that our study can produce accurate results.
+It is important to note that all the given numbers refers to granted patents approved by the USPTO (United State Patent and Trademark Office) and therefore, the statistics highlighted do not cover all patent applications around the world. However, USPTO is the most popular patent company in the word, therefor we believe our study can produce accurate results.
 
 ## 1. General Picture of Granted Patents
 
 ## 1.1. Evolution of Granted Patents in Years
 
-In the first step, we wanted display the evolution of granted patents during the last decade in order to see the general trend. The resulting line graph can be seen in the following figure.
+In the first step, the evolution of granted patents during the last decade is displayed in order to see the general trend. The resulting line graph can be seen in the following figure.
 
 <a id="Overview on patents growth"></a>
 ![Image](img/patents_overall.png)
 
 *Figure 1: Number of Granted Patents over the last decade*
 
-It is clear from this figure that granted patents has dramatically surged in numbers. This situation is expected since the amount of researches has also increased all over the world in 21st century and continue to do so.
+It is clear from this figure that granted patents has dramatically surged in numbers. This situation is expected since the amount of researches has also increased all over the world in 21st century.
 
 ## 1.2. Company-wise Analysis of Patents
 
-Next, we were curious about which companies has delivered most patents. We aim to display the top companies in terms of number of patents that they published. Luckily, PatentsView provides the total number of patents that a companies have delivered in their entire lifespan and therefore, it was not required to iterate through years to get these statistics. 
+The following figure shed the light on which companie publish most patents over the world
 
 <a id="number_of_patents_by_companies"></a>
 ![Image](img/number_of_patents_by_companies.png)
@@ -49,7 +49,7 @@ As we can see International Business Machines Corporation (IBM) is the leading c
 
 ## 1.3. Country-wise Analysis of Patents
 
-After companies, we moved into analysis according to countries. We acquired countries by examining inventors. It is possible that multiple inventors might be involved in a a given patent and these inventors might be located in different countries. We went through each inventor's in a patent and increased the patent number of patent for a country by one for if at least one inventor belong in a different country. It is also important to mention that for the initial analysis, we only examine the patents granted in the last year. (A more detailed investigations are conducted in the later stages of this project.)
+In this part, patents application classified by countries is studied. It is possible that multiple inventors are involved in a given patent. Moreover, these inventors might be located in different countries. Therefore, went through each inventors in a patent and assigned one point for a country if at least one inventor belongs to this country. It is also important to mention that for the initial analysis, we only examine the patents granted in the last year. 
 
 <a id="last_year_patents_by_country"></a>
 ![Image](img/last_year_patents_by_country.png)
@@ -66,7 +66,7 @@ The following map displays the dispersion of patents applications around the wor
 
 The Cooperative Patent Classification (CPC) is patent categorization model which has been jointly developed by the European Patent Office (EPO) and the United States Patent and Trademark Office (USPTO).
 
-CPC categories are indicated in the following table. In this part of our project, we analyzed countries by number of patents granted according these categories.
+CPC categories are indicated in the following table.
 
 
 | **CODE** | **DESCRIPTION**   |
@@ -83,7 +83,7 @@ CPC categories are indicated in the following table. In this part of our project
 
 *Table 1: Patent Categories according to Cooperative Patent Classification*
 
-As it was highlighted in the previous section, we started the analysis by gathering patents granted within the last year. For each of these patents, we also acquired belonging country and CPC category code. With help of these two informations, we were able to determine top countries for each category. Resulting graphs are as follows.
+In that As it was highlighted in the previous section, we started the analysis by gathering patents granted within the last year. For each of these patents, we also acquired belonging country and CPC category code. With help of these two informations, we were able to determine top countries for each category. Resulting graphs are as follows.
 
 ![Image](img/patents_by_categories.png)
 *Figure 4: Number of Granted Patents in the Last Year according to CPC Categories with Bar Charts*
