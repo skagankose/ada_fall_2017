@@ -538,9 +538,7 @@ As a result, we can actually confirm that who are making more revenue from their
 |------|------|
 | US | 4526 |
 | JP | 807 |
-| . | . |
-| . | . |
-| . | . |
+| ... | ... |
 | RU | 6 |
 
 # References
