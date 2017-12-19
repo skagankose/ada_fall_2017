@@ -64,7 +64,7 @@ The following map displays the dispersion of patents applications around the wor
 
 ## 1.4. Analysis of Patents belonging to Countries by CPC Categories
 
-The Cooperative Patent Classification (CPC) is patent categorization model which has been jointly developed by the European Patent Office (EPO) and the United States Patent and Trademark Office (USPTO).
+The Cooperative Patent Classification (CPC) is a patent categorization model which has been jointly developed by the European Patent Office (EPO) and the United States Patent and Trademark Office (USPTO).
 
 CPC categories are indicated in the following table.
 
@@ -83,7 +83,7 @@ CPC categories are indicated in the following table.
 
 *Table 1: Patent Categories according to Cooperative Patent Classification*
 
-In that As it was highlighted in the previous section, we started the analysis by gathering patents granted within the last year. For each of these patents, we also acquired belonging country and CPC category code. With help of these two informations, we were able to determine top countries for each category. Resulting graphs are as follows.
+In that section, patents are studied by CPC sectors and sorted by top countries. The analysis highligh the granted patent within the last year. Resulting graphs are as follow:
 
 ![Image](img/patents_by_categories.png)
 *Figure 4: Number of Granted Patents in the Last Year according to CPC Categories with Bar Charts*
@@ -94,18 +94,14 @@ Only some of the figures were drawn because of space concerns. All the figures c
 ![Image](img/patents_by_categories_stacked.png)
 *Figure 5: Number of Granted Patents in the Last Year according to CPC Categories with a Stacked Chart*
 
-Although this figure seems similar to [figure we draw](#last_year_patents_by_country), it is not the case since for some patents, it might be the case that they belong to multiple CPC categories.
-
-At this point, we wanted display these results in a more descriptive way that can reveal more insights related to patent characteristics of countries. We figured that spider charts can serve this purpose quite nicely. Again, we draw figures only for certain countries (United States, Japan, Germany and Switzerland) and the rest can be reached from our [notebook](LINK REQUIRED).
+To reveal more insights related to patent characteristics, spider charts were used to shed the light on which contry is focus on which sector. Below, some figures for certain countries of interest are displayed (United States, Japan, Germany and Switzerland). The rest can be obtained from our [notebook](LINK REQUIRED).
 
 <a id='patents_by_categories_spider'></a>
 ![Image](img/patents_by_categories_spider.png)
 *Figure 6: Number of Granted Patents in the Last Year according to CPC Categories with Spider Charts*
 
-This figures reveal that Japan and the United States hold most of their patents in the Electricity and the Physics sectors while Switzerland's patents are more concentrated on Chemistry, Humans Necessities and Physics. Germany seems to hold significant number of patents in Transportation sector.
+This figures reveal that Japan and the United States hold most of their patents in the Electricity and the Physics sectors while Switzerlands patents are more concentrated on Chemistry, Humans Necessities and Physics. Germany seems to hold significant number of patents in Transportation sector.
 It is clear from these charts that Germany and Switzerland are much more polyvalent than United States and Japan since they have highly diversified patents across many of the CPC sectors.
-
-With that, we conclude the first part of the project and move into more advanced analysis with sector specific investigations.
 
 ## 2. Sector-Specific Analysis of Granted Patents
 
@@ -113,17 +109,15 @@ This part aims to study the evolution of granted patents by sector of interest (
 
 To retrieve the patents from the Patentsview database, keywords and IPC symbols are used. IPC symbols allows to classify patents from different sector. For example the IPC symbol F01B 3 (F = Mechanical engineering, lighting, heating, weapon, 01 = Machines or engines in general, B = Steam engines, 3 = Reciprocating-pison machines or engines with cylender axes). Keywords allows us to confirm that the patent technology from IPC correspond exactly to what we are looking for.
 
-In order to help us to find the IPC symbols corresponds to which sector, the website http://www.wipo.int/classifications/ipc/en/ is used. A research can be carried out by keywords and then the every IPC symbols are checked separately to confirm they match with our sector criterium.
-
-One important point to mention that since all of these sector have characteristic specific to themselves, we analyze them separately. Although there are some methods that we applied for all of them, for the most part, each of these sector-wise analysis followed different methodologies which best suit for these sectors.
+In order to help us to find the IPC symbols corresponds to which sector, the website http://www.wipo.int/classifications/ipc/en/ is used. IPC symbols are searched separately to confirm they match with our sector criterium.
 
 ## 2.1 Energy Patents Analysis
 
-Energy is a high-end sector that changed significantly over the years. The renewable energy sector became more and more unavoidable to fight against global warming. Some new technologies emerged whereas some other became less attractive. This part of the study aims to highlight the new trends in energy. Three different categories will be compared : Renewable energy, coal and gas, nuclear energy. By analyzing this sector, a study will be carried out to understand how countries are taking more consideration of global warming, trying to get rid of fossil energy or decrease the nuclear research. Inside the renewable category, many subcategories will be studied : Solar photovoltaic, solar thermic, wind, hydro, wave and tidal, carbon capture and storage. All these technologies will be compare from 2006 to 2016.
+Energy is a high-end sector that changed significantly over the years. The renewable energy sector became more and more unavoidable to fight against global warming. Some new technologies emerged whereas some other became less attractive. This part of the study aims to highlight the new trends in energy. Three different categories will be compared : Renewable energy, coal and gas, nuclear energy. By analyzing this sector, a study will be carried out to understand how countries are taking more consideration of global warming, trying to get rid of fossil energy or decrease their nuclear research. Inside the renewable category, many subcategories will be studied : solar photovoltaic, solar thermic, wind, hydro, wave and tidal, carbon capture and storage. All these technologies will be compare from 2006 to 2016.
 
 The keywords used for the renewable energy technology are given in the paper "Patent-based Technology report - Alternative Energy Technology" made by the "World Intellectual Property Organization", which gives a fairly accurate result. For the nuclear/coal and gas sector, the website http://www.wipo.int/classifications/ipc/en/ is used. For the latter, keywords are researched and every potential IPC symbols are studied separately to find a match in the category.
 
-First, using patentsview API, queries are send in the database to obtain the number of patent over years for every sectors.
+Patentsview API is used to send queries to the database to obtain the number of patents over years for every sectors.
 
 ### Evolution of the different sectors in energy
 
@@ -137,21 +131,21 @@ First, using patentsview API, queries are send in the database to obtain the num
 
 *Figure 8: Evolution of solar thermic technology*
 
-Even if the photovoltaic technology is more important than the solar thermic technology in term of number of patents, both sectors had a huge increase, espessially in the past 4 years
+Even if the photovoltaic technology is more important than the solar thermic technology in term of number of patents, both sectors had a huge increase, especially during the past 4 years
 
 <a id='patents_wind'></a>
 ![Image](img/patents_wind.png)
 
 *Figure 9: Evolution of wind technology*
 
-Wind energy has more patents than solar energy in 2007/2008. However if we sum up both solar technologies, in 2016 wind and solar energy have a similar number of patents.                    
+Wind energy has more patents than solar energy in 2007/2008. However if we sum up both solar technologies, wind and solar energy have a similar number of patents in 2016.                    
 
 <a id='patents_hydro'></a>
 ![Image](img/patents_hydro.png)
 
 *Figure 10: Evolution of hydropower technology*
 
-Hydro does not have a large number of patent. Howerver, we could expect that this technology is outdated since dams were built many years ago (at least in Switzerland). In fact, as the other energy sectors and the number of patent in general, hydroelectric technology also evolved fast in the past.
+Hydro does not have a large number of patents. Howerver, we could expect that this technology is outdated since dams were built many years ago (at least in Switzerland). In fact, as the other energy sectors and the number of patent in general, hydroelectric technology also evolved fast in the past.
 
 <a id='patents_wave_and_tidal'></a>
 ![Image](img/patents_wave_and_tidal.png)
@@ -179,7 +173,7 @@ As the other sector, fossil energy had an increase in research from 2013 to 2015
 
 *Figure 14: Evolution of nuclear technology*
 
-The number of patents for nuclear energy also blew up in from 2013 to 2016. Even the nuclear catastrophe that occured in the pas didn't change the number of patent application in that area.                       
+The number of patents for nuclear energy also blew up in from 2013 to 2016. Even the nuclear catastrophe that occured in Fukushima didn't change the number of patent applications in that area.                       
 
 ### Comparison between renewable energy vs coal and gas technologies
 
@@ -188,11 +182,11 @@ The number of patents for nuclear energy also blew up in from 2013 to 2016. Even
 
 *Figure 15: Renewable vs coal and gas technologies*
 
-The plot above shows clearly that there was the same number of patent between fossil energy and renewable around 2007 and 2009. After 2009 it can be note that the patent applications for renewable energy evolved much faster. In 2016, the number of patent in coal and gas decreased, we can then expect that the difference between both categories will increase even faster in the future.
+The plot above shows clearly that there were the same number of patents between fossil energy and renewable around 2007 and 2009. After 2009 it can be note that the patent applications for renewable energy evolved much faster. In 2016, the number of patent in coal and gas decreased, we can then expect that the difference between both categories will increase even faster in the future.
 
 ### Comparison of growth in number of patents
 
-The evolution of granted patent in energy can be compared between each other for the past 10 years. In order to achieve this pupose, we can compute the growth of patents per year according to the folowing formula :
+The evolution of granted patent in energy can be compared between each other for the past 10 years. In order to achieve this pupose, the growth of patents per year was computed according to the folowing formula :
 
 \begin{equation*}
 Growth  = \frac{nb\ patents\ year\ i+1\ -\ nb\ patents\ year\ i}{nb\ patent\ year\ i}
@@ -205,22 +199,22 @@ Below, the plot showing the average growth in patent application is displayed. T
 
 *Figure 16: Average growth for the different technologies*
 
-The bar plot aborve highlights the fact that solar energy is a trend nowadays. Carbon capture is a very new technology that is espected to evolve very fast in the future. However, as we can see in the table containing the number of patent, this sector do not contain many patents and the standard deviation is large. Therefore the future of this technology is uncertain. By looking at the 3 average growth on the right, it can be observed that renewable energy has evolved more in the past than fossil energy. Despite the nuclear catastrophe in Fukushima, the number of patents in that sector still exploded and evolved faster espessially in the past few years. However, the number of patents in renewable and fossil energy is much larger. It is also important to note that the patents in nuclear energy might also include the research in making the technology safer.
+The bar plots above highlight the fact that solar energy is a trend nowadays. Carbon capture is a very new technology that is espected to evolve very fast in the future. However, as we can see in the table containing the number of patent, this sector does not contain many patents and the standard deviation is large. Therefore the future of this technology is uncertain. By looking at the 3 average growths on the right, it can be observed that renewable energy has evolved more in the past than fossil energy. Despite the fear of nuclear energy, the number of patents in that sector still exploded and evolved faster espessially in the past few years. However, the number of patents in renewable and fossil energy remains much larger. It is also important to note that the patents in nuclear energy might also include the research to make the technology safer.
 
 ### Correlation matrix
 
-A study of the relation between the growth in the different sector can be studied. For exemple, it can shown that when the hydro sector grows, the wind sector will grow as well. A correlation matrix can be computed to highlight these relation. The more the correlation is close to one, the more both sector are growing together.
+A study of the relation between the growth in the different sectors can be studied. For exemple, it can shown that when the hydro sector grows, the wind sector will grows as well. A correlation matrix can be computed to highlight these relations. The more the correlation is close to one, the more both sectors are growing together.
 
 <a id='correl_matrix_energy'></a>
 ![Image](img/correl_matrix_energy.png)
 
 *Figure 17: correlation matrix between the different technologies*
 
-FIt can be observed that the technology in solar termic and photovoltaic evolve together. Wind and Hydro technologies seems to be highly correlated. We could suppose that those technology are complementary and that governements encorage investments in both technologies at the same time. Tidal and wave as well as carbon capture are not correlated to any other energy secors. It can be explained that those technologies are new compare to the others. It is interesting to note that carbon and gas technologies have high correlation with nuclear energy. If some countries are not focus on green energy, the investment in these 2 sectors will be fostered. With a correlation of 0.97 between the wind energy and renewable energy in general, it can be deducted that wind energy represent the general trend in green energy.
+It can be observed that the technology in solar termic and photovoltaic evolve together. Wind and Hydro technologies seem to be highly correlated. We could suppose that those technology are complementary and that governements encorage investments in both technologies at the same time. Tidal and wave as well as carbon capture are not correlated to any other energy secors. It can be explained that those technologies are new compare to the others and therefore more volatile. It is interesting to note that carbon and gas technologies have high correlation with nuclear energy. If some countries are not focus on green energy, the investment in these 2 sectors will be fostered. With a correlation of 0.97 between the wind energy and renewable energy in general, it can be deducted that wind energy represents the general trend in green energy (This is the sector with most of the patents).
 
 ### Comparisons of renewable energy patents between companies and countries
 
-For this next study, only the patents between 2010 and 2016 will be. It takes less compilation time and shows a sufficient ammount of date for companies and countries.
+For this next study, only the patents between 2010 and 2016 will be retreived from the database. Indeed, it takes less compilation time and shows a sufficient ammount of date for companies and countries.
 
 <a id='word_map_renewable'></a>
 ![Image](img/word_map_renewable.png)
@@ -228,6 +222,8 @@ For this next study, only the patents between 2010 and 2016 will be. It takes le
 *Figure 18: patents application in renewable energy around the world*
 
 This map shows the number of USPTO patents application around the world
+
+The next study cassifies each technology by countries
 
 <a id='countries_solar'></a>
 ![Image](img/countries_solar.png)
@@ -246,19 +242,22 @@ This map shows the number of USPTO patents application around the world
 
 Every technologies are dominated by the US, especially for solar thermic, hydro, tidal and wave. This is not surprising since USPTO is a US company.
 
-Solar Photovoltaic: Japan, Korea and Taiwan follows the US in the ranking, we can note that their investment in this sector highly increased in the past 3 years. Germany, France and China arrive after in the ranking
+**Solar Photovoltaic**: Japan, Korea and Taiwan follows the US in the ranking. It can be note that their investment in this sector highly increased in the past 3 years. Germany, France and China arrive after in the ranking
 
-Solar Themic: US and Japan are the first for this technolog. However, Germany and Spain are 3rd and 4th with a big investment in that sector in 2015.
+**Solar Themic**: US and Japan are the first for this technology. However, European countries like Germany or Spain are 3rd and 4th with a big investment in that sector in 2015.
 
-Wind: Germany outperforms Japan in that sector and take the second rank. We can also note the big effort of Denmark in that area which take the 4th rank. The politic of developping wind energy in those 2 countries explains this good performance
+**Wind**: Germany outperforms Japan in that sector and takes the second rank. We can also note the big effort of Denmark in that area with a 4th rank. The politic of developping wind energy in those 2 European countries explains their good performance
 
-Hydro is highly dominated by the US followed by Japan and Germany. Canada is ranked 4th with 62% of its energy produce by hydroelectricity.
+**Hydro**: This sector is highly dominated by the US followed by Japan and Germany. Canada is ranked 4th with 62% of its energy produce by hydroelectricity.
 
-Tidal and Wave: Highliy dominated by the US. The UK becomes second with a high investment in 2014. We can notice that European countries like France, Spain, Italy, Norway and Finland are also investing in this technology, especially the past few years.
+**Tidal and Wave**: This technology is highliy dominated by the US. The UK becomes second with a high investment in 2014. We can notice that European countries like France, Spain, Italy, Norway and Finland are also investing in this technology, especially the past few years.
 
-Carbon Capture: Japan and Korea are at the forefront of the research for this technology after the US and invested a lot during 2016 which is auspicious for the future.
+**Carbon Capture**: Japan and Korea are at the forefront of the research for this technology after the US and invested a lot during 2016 which is auspicious for the future.
 
-Renewable energy in gerneral: The ranking follows the general trend of all the specific renewable energy with the US fist, followed by Japan, Germany, Korea and Denmark. We can note that China which is a big country is only 9th and Russie do not even appear in the top 10.
+**Renewable energy in gerneral**: The ranking follows the general trend of all the specific renewable energy with the US fist, followed by Japan, Germany, Korea and Denmark. We can note that China which is a big country is only 9th and Russie do not even appear in the top 10. (This part is only available in the notebook to not overload the website)
+
+
+The next study cassifies each technology by companies
 
 <a id='companies_solar_photo'></a>
 ![Image](img/companies_solar_photo.png)
@@ -292,17 +291,17 @@ Renewable energy in gerneral: The ranking follows the general trend of all the s
 
 Different companies are leaders for different sectors:
 
-Solar Photovolataic: SunPower Corporation is first, it is a solar panel supplier based in San Jose, CA and is a subsidiary from Total. This company is known for their highly performant solar panel. Then comes the multinational US company IBM and the Japanese company Sharp.
+**Solar Photovolataic**: SunPower Corporation is first, it is a solar panel supplier based in San Jose, CA and is a subsidiary from Total. This company is known for their highly performant solar panel. Then comes the multinational US company IBM and the Japanese company Sharp.
 
-Solar Thermic: SunPower Corporation is also first for the thermic solar panel followed closely by Abengoa which is a spanish company. It confirms that Spain arrives 4th in the ranking for solar termic panels.
+**Solar Thermic**: SunPower Corporation is also first for the thermic solar panel followed closely by Abengoa which is a spanish company. It confirms the fact that Spain arrives 4th in the ranking for solar termic panels.
 
-Wind: The multinational US company GE activ in many energy sector is the first patent company for wind. Vestas which is a danish company is 3nd. The latter is only active in wind energy and is highly responsible for the good ranking for Denmark in that area.
+**Wind**: The multinational US company GE active in many energy sector is the first patent company for wind. Vestas which is a danish company is 3nd. The latter is only active in wind energy and is highly responsible for the good ranking for Denmark in that area.
 
-Hydro: Caterpilar dominate the market in terms of Hydro patents. Even if their main area is construction machine, they also profide equipments for hydropower plants.
+**Hydro**: Caterpilar dominate the market in terms of Hydro patents. Even if their main area is construction machine, they also provide equipments for hydropower plants.
 
-Tidal and Wave: The market is shared by many companies in that sector and we can note that none of them are multinational but specialisez in that sector. Many of them started their invesments in 2015/2016. Therefore we can conclude that this area has a big potential. The first company (Ocean Power technology) is from the US, the second (Voith) is from Germany and the third is the National Taiwan University.
+**Tidal and Wave**: The market is shared by many companies in that sector and we can note that none of them are multinational but specialised in this sector. Many of them started their invesments in 2015/2016. Therefore we can conclude that this area has a big potential. The first company (Ocean Power technology) is from the US, the second (Voith) is from Germany and the third is the National Taiwan University.
 
-Carbon Capture is dominated by Samsung. We can note that they provided most of the patents in the past 2 years (2015/2016). Therefore we can conclude that they are inversting a lot in that technology and are expected to grow even more in that sector. The same conclusion can be drawn for the japanese company Toshiba who started to invest in Carbon Capture in 2014.
+**Carbon Capture**: this sector is dominated by Samsung. We can note that they provided most of the patents in the past 2 years (2015/2016). Therefore we can conclude that they are inversting a lot in that technology and are expected to grow even more in that sector. The same conclusion can be drawn for the japanese company Toshiba who started to invest in Carbon Capture in 2014.
 
 
 ## 2.2. FinTech Patents Analysis
