@@ -20,7 +20,7 @@ It also needs emphasizing that we've used [Jupyter Notebook](http://jupyter-note
 
 The project can be separated into two parts. In the first part, we conducted a more general research to be able to see the overall picture related to granted patents. We tried to analyze the characteristic of granted patents by observing number of patent through years and associating them with countries and companies. We also give a generic sector-wise overview of granted patens (according to Cooperative Patent Classification categories).
 
-In the second part of the project, we aimed to dive deeper into analysis and explore some of the most popular technology sectors in today's world. The sector we examined can grouped as energy, financial technologies and artificial intelligence. Most part of the project is structured around these three sectors. We study them comprehensively in order to understand their evolution in the time and relationship with companies and countries.
+In the second part of the project, we aimed to dive deeper into analysis and explore some of the most popular technology sectors in today's world. The sector we examined are grouped as energy, financial technologies and artificial intelligence. Most part of the project is structured around these three sectors. We studied them comprehensively in order to understand their evolution in the time and relationship with companies and countries.
 
 It is important to note that all the given numbers refers to granted patents approved by the USPTO (United State Patent and Trademark Office) and therefore, the statistics highlighted do not cover all patent applications around the world, but since USPTO is the most popular patent company, we believe that our study can produce accurate results.
 
@@ -28,7 +28,7 @@ It is important to note that all the given numbers refers to granted patents app
 
 ## 1.1. Evolution of Granted Patents in Years
 
-In the first step, we wanted display the evolution of granted patents during the last decade in order to see the general trend. Since, the API cannot return more than 100'000 patents in one request, we needed to collect the number of patents month by month and aggregated the results by years. The resulting line graph can be seen in the following figure.
+In the first step, we wanted display the evolution of granted patents during the last decade in order to see the general trend. The resulting line graph can be seen in the following figure.
 
 <a id="Overview on patents growth"></a>
 ![Image](img/patents_overall.png)
@@ -39,7 +39,7 @@ It is clear from this figure that granted patents has dramatically surged in num
 
 ## 1.2. Company-wise Analysis of Patents
 
-Next, we were curious about which companies has delivered most patents. We aim to display the top companies in terms of number of patents that they published. Luckily, PatentsView provides the total number of patents that a companies have delivered in their entire lifespan and therefore, it was not required to iterate through years to get these statistic. However, the way it works is that number of patents belongs to a certain company can only be acquired if we encounter a patent that belongs to that specific company. For this reason, we tried to iterate through couple of years and hoped to encounter at least a patent published by each of the different companies. Results were convincing since we get all the important patent provider companies that we anticipated to get.
+Next, we were curious about which companies has delivered most patents. We aim to display the top companies in terms of number of patents that they published. Luckily, PatentsView provides the total number of patents that a companies have delivered in their entire lifespan and therefore, it was not required to iterate through years to get these statistics. 
 
 <a id="number_of_patents_by_companies"></a>
 ![Image](img/number_of_patents_by_companies.png)
@@ -49,15 +49,13 @@ As we can see International Business Machines Corporation (IBM) is the leading c
 
 ## 1.3. Country-wise Analysis of Patents
 
-After companies, we moved into analysis according to countries. We acquired countries by examining inventors. It was the case that multiple inventors might be involved in a a given patent and these inventors might be located in different countries and so, we go through each inventor's country and increased the patent number belonging to this country by 1. It is also important to mention that for the initial analysis, we only examine the patents granted in the last year. (A more detailed investigations are conducted in the later stages of this project.)
+After companies, we moved into analysis according to countries. We acquired countries by examining inventors. It is possible that multiple inventors might be involved in a a given patent and these inventors might be located in different countries. We went through each inventor's in a patent and increased the patent number of patent for a country by one for if at least one inventor belong in a different country. It is also important to mention that for the initial analysis, we only examine the patents granted in the last year. (A more detailed investigations are conducted in the later stages of this project.)
 
 <a id="last_year_patents_by_country"></a>
 ![Image](img/last_year_patents_by_country.png)
 *Figure 3: Number of Granted Patents in the Last Year by Countries*
 
-We also wanted to visualize these findings in a choropleth world map to highlight dispersion granted patents across the countries. In PatensView dataset, country names are coded according to the Alpha-2 ISO norm and to be able to draw the map, it is required a .geojson file that maps these country codes into actual locations. For this purposes, we used take [this](LINK REQUIRED) .geojson file and customized for our purposes.
-
-As it can be seen from [Figure 3](#last_year_patents_by_country), there is a very large gap between countries in terms of number of patents and to be able to have a more descriptive choropleth map, we opted for a logarithmic scale. The resulting map can be seen in the following map and we served the interactive visualization of this map in [here](html/patents_by_country.html).
+The following map displays the dispersion of patents applications around the world
 
 <a id="patents_by_country"></a>
 ![Image](img/patents_by_country.png)
@@ -85,12 +83,12 @@ CPC categories are indicated in the following table. In this part of our project
 
 *Table 1: Patent Categories according to Cooperative Patent Classification*
 
-As we did in the previous section, we started the analysis by gathering patents granted within the last year. For each of these patents, we also acquired belonging country and CPC category code. With help of these two information, we were able to determine top countries for each category. Resulting graphs are as follows.
+As it was highlighted in the previous section, we started the analysis by gathering patents granted within the last year. For each of these patents, we also acquired belonging country and CPC category code. With help of these two informations, we were able to determine top countries for each category. Resulting graphs are as follows.
 
 ![Image](img/patents_by_categories.png)
 *Figure 4: Number of Granted Patents in the Last Year according to CPC Categories with Bar Charts*
 
-As it can be seen, we draw only some of the figures because of space concerns but, figures belonging to all categories can be reached from our [notebook](LINK REQUIRED). Almost for all of these categories United States and Japan take the 1st and 2nd however as for the 3rd place, Switzerland, South Koreas or Germany took over in according to different CPC categories. To be able to see all of these ranking in a single figure, we decided to draw a stacked bar chart which is demonstrated in Figure 5.
+Only some of the figures were drawn because of space concerns. All the figures can be reached from our [notebook](LINK REQUIRED). Almost for all of these categories United States and Japan take the 1st and 2nd place. Switzerland, South Koreas or Germany took the 3rd place according to different CPC categories. To be able to see all of these ranking in a single figure, a stacked bar chart is plotted (Figure 5).
 
 <a id='patents_by_categories_stacked'></a>
 ![Image](img/patents_by_categories_stacked.png)
