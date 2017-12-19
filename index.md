@@ -1,4 +1,4 @@
-# Patent Applications Analysis
+# A World Tour Of Patent Application
 
 # Introduction
 
