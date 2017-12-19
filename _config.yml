@@ -1,4 +1,4 @@
 theme: jekyll-theme-cayman
 title: Granted Patents Analysis
 description: Analysis of Granted Patents from 1976 until 2017: A Project for Applied Data Analysis
-show_downloads: false
+show_downloads: "true"
