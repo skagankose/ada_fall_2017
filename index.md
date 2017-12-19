@@ -117,7 +117,7 @@ To retrieve the patents from the Patentsview database, keywords and IPC symbols 
 
 In order to help us to find the IPC symbols corresponds to which sector, the website http://www.wipo.int/classifications/ipc/en/ is used. A research can be carried out by keywords and then the every IPC symbols are checked separately to confirm they match with our sector criterium.
 
-One important point to mention that since all of these sector have characteristic specific to themselves, we analyze them separately. Although there are some methods that we applied for all of them, for the most part, each of these sector-wise analysis followed different methodologies which best suit for these sectors. 
+One important point to mention that since all of these sector have characteristic specific to themselves, we analyze them separately. Although there are some methods that we applied for all of them, for the most part, each of these sector-wise analysis followed different methodologies which best suit for these sectors.
 
 ## 2.1 Energy Patents Analysis
 
@@ -486,7 +486,7 @@ As a result, we can actually confirm that countries which are making more revenu
 
 [6] Wikipedia. (2017, December 19). *Philip S. Yu*. [https://en.wikipedia.org/wiki/Philip_S._Yu](https://en.wikipedia.org/wiki/Philip_S._Yu)
 
-[7] Wikipedia. (2017, December 19). *Dharmendra Modha*. https://en.wikipedia.org/wiki/Dharmendra_Modha(https://en.wikipedia.org/wiki/Dharmendra_Modha)
+[7] Wikipedia. (2017, December 19). *Dharmendra Modha*. [https://en.wikipedia.org/wiki/Dharmendra_Modha](https://en.wikipedia.org/wiki/Dharmendra_Modha)
 
 [10] Taming the Beast: A Scientific Definition of Fintech, *Patrick Schueffel*
 [https://hesso.tind.io/record/1996/files/Schueffel_Tamingthebeast_2016.pdf](https://hesso.tind.io/record/1996/files/Schueffel_Tamingthebeast_2016.pdf)
