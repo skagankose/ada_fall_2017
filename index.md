@@ -296,6 +296,8 @@ Different companies are leaders for different sectors:
 
 **Carbon Capture**: this sector is dominated by Samsung. We can note that they provided most of the patents in the past 2 years (2015/2016). Therefore we can conclude that they are investing a lot in that technology and are expected to grow even more in that sector. The same conclusion can be drawn for the japanese company Toshiba who started to invest in Carbon Capture in 2014.
 
+## Conclusion Energy
+This part of our research showed that renewable energy will have an important future and shoud overcome fossil energy. Even if wind energy had most of the patents in renewable energy in the past, solar energy is expected to be the most important source of green energy in the future. The investment in new technologies like Carbon Capture or Tidal and Wave tend to increase greatly. Some small and specific companies in that sector are starting to invest massively in those new promising technologies. The study also highlighted some specific countries which are more focus on a specific sector. Despite current apprehension, the nuclear sector also seems to have a future in many countries.
 
 # 2.2. FinTech Patents Analysis
 
