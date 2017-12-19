@@ -1,7 +1,7 @@
 
 # Introduction
 
-The purpose of our project is to extract valuable insights about research trends around the world and shed some light on popular technologies by analyzing granted patents throughout years. In first part of the project, we start by giving certain summary and statistics about patents according to countries and companies. We wanted analyze the evolution of granted patents over time with the purpose of extracting meaningful informations relative to various sectors. In the second part of the project, we to dive deeper in analysis and explore some of the most popular technology sectors of this century. More specifically, the sector we are interested in are energy, financial technologies and artificial intelligence. Most part of the project is structured around these three sectors. The latters were studied in order to understand their evolution in the time and reveal their relationships with belonging companies and countries.
+The purpose of our project is to extract valuable insights about research trends around the world and shed some light on popular technologies by analyzing granted patents throughout years. In first part of the project, we start by giving certain summary and statistics about patents according to countries and companies. We analyze the evolution of granted patents over time with the purpose of extracting meaningful informations relative to various sectors. In the second part of the project, we dive deeper into the analysis and explore some of the most popular technology sectors of this century: Energy, FinTech and Artificial Intelligence. Most part of the project is structured around these three sectors. We study them comprehensively in order to understand their evolution over time. 
 
 # Dataset
 
