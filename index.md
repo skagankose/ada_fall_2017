@@ -1,4 +1,3 @@
-# A World Tour Of Patent Application
 
 # Introduction
 
