@@ -1,3 +1,10 @@
 theme: jekyll-theme-cayman
 title: Granted Patents Analysis
-description: Analysis of Granted Patents from 1976 until 2017: A Project for Applied Data Analysis
+description: Analysis of Granted Patents from 1976 until 2017 - A Project for Applied Data Analysis
+navbar-links:
+  About Me: "aboutme"
+  Resources:
+    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
+    - Learn markdown: "http://www.markdowntutorial.com/"
+    - GitHub Pages: "https://pages.github.com/"
+  Author's home: "http://deanattali.com"
