@@ -111,11 +111,13 @@ With that, we conclude the first part of the project and move into more advanced
 
 ## 2. Sector-Specific Analysis of Granted Patents
 
-This part aims to study the evolution of granted patents per sector of interest (Energy, Fintech and AI).
+This part aims to study the evolution of granted patents by sector of interest (Energy, Fintech and AI).
 
-To retreive the patents from the Patentsview database, keywords and IPC symbols are used. IPC symbols allows to classify patents from different sector. For example the IPC symbol F01B 3 (F = Mechanical engineering, lighting, heating, weapon, 01 = Machines or engines in general, B = Steam engines, 3 = Reciprocating-pison machines or engines with cylender axes). Keywords allows us to confirm that the patent technology from IPC correspond exactly to what we are looking for.
+To retrieve the patents from the Patentsview database, keywords and IPC symbols are used. IPC symbols allows to classify patents from different sector. For example the IPC symbol F01B 3 (F = Mechanical engineering, lighting, heating, weapon, 01 = Machines or engines in general, B = Steam engines, 3 = Reciprocating-pison machines or engines with cylender axes). Keywords allows us to confirm that the patent technology from IPC correspond exactly to what we are looking for.
 
 In order to help us to find the IPC symbols corresponds to which sector, the website http://www.wipo.int/classifications/ipc/en/ is used. A research can be carried out by keywords and then the every IPC symbols are checked separately to confirm they match with our sector criterium.
+
+One important point to mention that since all of these sector have characteristic specific to themselves, we analyze them separately. Although there are some methods that we applied for all of them, for the most part, each of these sector-wise analysis followed different methodologies which best suit for these sectors. 
 
 ## 2.1 Energy Patents Analysis
 
@@ -130,55 +132,55 @@ First, using patentsview API, queries are send in the database to obtain the num
 <a id='patents_solar_photo'></a>
 ![Image](img/patents_solar_photo.png)
                         *Figure 7: Evolution of solar photovoltaic technology*
-                                              
+
 <a id='patents_solar_thermal'></a>
 ![Image](img/patents_solar_thermal.png)
                         *Figure 7: Evolution of solar thermic technology*
- 
+
 Even if the photovoltaic technology is more important than the solar thermic technology in term of number of patents, both sectors had a huge increase, espessially in the past 4 years
 
 <a id='patents_wind'></a>
 ![Image](img/patents_wind.png)
                         *Figure 7: Evolution of wind technology*
-                    
+
 Wind energy has more patents than solar energy in 2007/2008. However if we sum up both solar technologies, in 2016 wind and solar energy have a similar number of patents.                    
-                        
+
 <a id='patents_hydro'></a>
 ![Image](img/patents_hydro.png)
-                        *Figure 7: Evolution of hydropower technology* 
- 
+                        *Figure 7: Evolution of hydropower technology*
+
 Hydro does not have a large number of patent. Howerver, we could expect that this technology is outdated since dams were built many years ago (at least in Switzerland). In fact, as the other energy sectors and the number of patent in general, hydroelectric technology also evolved fast in the past.
-                     
+
 <a id='patents_wave_and_tidal'></a>
 ![Image](img/patents_wave_and_tidal.png)
-                        *Figure 7: Evolution of wave and tidal technology* 
-                        
+                        *Figure 7: Evolution of wave and tidal technology*
+
 As we can observe, wave and tidal turbines were irrelevant in 2007. In the next years this technology became more important and the number of patent became hundred times greater in 10 years.
 
 <a id='patents_carbon_capture'></a>
 ![Image](img/patents_carbon_capture.png)
-                        *Figure 7: Evolution of carbon capture technology* 
+                        *Figure 7: Evolution of carbon capture technology*
 
 Carbon capture almost didn't exist in 2007 but increased greatly in the past years although the number of patents is very volatile
 
 <a id='patents_coal_and_gas'></a>
 ![Image](img/patents_coal_and_gas.png)
-                        *Figure 7: Evolution of coal and gas technology* 
+                        *Figure 7: Evolution of coal and gas technology*
 
 As the other sector, fossil energy had an increase in research from 2013 to 2015. However, it decreases in 2016. We can expect the trend to contimue in that direction.
 
 <a id='patents_nuclear'></a>
 ![Image](img/patents_nuclear.png)
-                        *Figure 7: Evolution of nuclear technology* 
-                        
+                        *Figure 7: Evolution of nuclear technology*
+
 The number of patents for nuclear energy also blew up in from 2013 to 2016. Even the nuclear catastrophe that occured in the pas didn't change the number of patent application in that area.                       
 
 ### Comparison between renewable energy vs coal and gas technologies
 
 <a id='patents_renewable_vs_coal_and_gas'></a>
 ![Image](img/patents_renewable_vs_coal_and_gas.png)
-                        *Figure 7: Renewable vs coal and gas technologies* 
-                        
+                        *Figure 7: Renewable vs coal and gas technologies*
+
 The plot above shows clearly that there was the same number of patent between fossil energy and renewable around 2007 and 2009. After 2009 it can be note that the patent applications for renewable energy evolved much faster. In 2016, the number of patent in coal and gas decreased, we can then expect that the difference between both categories will increase even faster in the future.
 
 ### Comparison of growth in number of patents
@@ -193,7 +195,7 @@ Below, the plot showing the average growth in patent application is displayed. T
 
 <a id='avg_growths_energy'></a>
 ![Image](img/avg_growths_energy.png)
-                        *Figure 7: Average growth for the different technologies* 
+                        *Figure 7: Average growth for the different technologies*
 
 The bar plot aborve highlights the fact that solar energy is a trend nowadays. Carbon capture is a very new technology that is espected to evolve very fast in the future. However, as we can see in the table containing the number of patent, this sector do not contain many patents and the standard deviation is large. Therefore the future of this technology is uncertain. By looking at the 3 average growth on the right, it can be observed that renewable energy has evolved more in the past than fossil energy. Despite the nuclear catastrophe in Fukushima, the number of patents in that sector still exploded and evolved faster espessially in the past few years. However, the number of patents in renewable and fossil energy is much larger. It is also important to note that the patents in nuclear energy might also include the research in making the technology safer.
 
@@ -203,7 +205,7 @@ A study of the relation between the growth in the different sector can be studie
 
 <a id='correl_matrix_energy'></a>
 ![Image](img/correl_matrix_energy.PNG)
-                        *Figure 7: correlation matrix between the different technologies* 
+                        *Figure 7: correlation matrix between the different technologies*
 
 FIt can be observed that the technology in solar termic and photovoltaic evolve together. Wind and Hydro technologies seems to be highly correlated. We could suppose that those technology are complementary and that governements encorage investments in both technologies at the same time. Tidal and wave as well as carbon capture are not correlated to any other energy secors. It can be explained that those technologies are new compare to the others. It is interesting to note that carbon and gas technologies have high correlation with nuclear energy. If some countries are not focus on green energy, the investment in these 2 sectors will be fostered. With a correlation of 0.97 between the wind energy and renewable energy in general, it can be deducted that wind energy represent the general trend in green energy.
 
@@ -214,14 +216,14 @@ For this next study, only the patents between 2010 and 2016 will be. It takes le
 <a id='word_map_renewable'></a>
 ![Image](img/word_map_renewable.PNG)
                         *Figure 7: patents application in renewable energy around the world*
-                        
+
 This map shows the number of USPTO patents application around the world
 
 
 
 ## 2.2. FinTech Patents Analysis
 
-Financial Technology (or FinTech) [10] is a ‘new’ financial industry that applies technology to improve financial activities . Among the several applications of FinTech we can cite a few such as new automated financial advisors, P2P lending platforms, new contactless payment technologies such (NFC, Twint, Apple Pay, etc.), blockchain application and development of cryptocurrencies (e.g. bitcoin, ethereum, etc.) personal finance applications that aim to help individuals and businesses develop a budget, and many more. 
+Financial Technology (or FinTech) [10] is a ‘new’ financial industry that applies technology to improve financial activities . Among the several applications of FinTech we can cite a few such as new automated financial advisors, P2P lending platforms, new contactless payment technologies such (NFC, Twint, Apple Pay, etc.), blockchain application and development of cryptocurrencies (e.g. bitcoin, ethereum, etc.) personal finance applications that aim to help individuals and businesses develop a budget, and many more.
 
 According to Google Trends, the word “FinTech” is searched 201’000 times each month on average, and this number is growing very fast in the future. Below is  a graph showing the interest over the last 6 years for FinTech.  A value of 100 is the peak popularity for the term. A value of 50 means that the term is half as popular.
 
@@ -229,8 +231,8 @@ According to Google Trends, the word “FinTech” is searched 201’000 times e
 ![Image](img/google_trends.png)
                         *Figure 7: Popularity of the search term “FinTech” on Google*
 
-From our PatentsView database,  we queried the FinTech patents of the last 10 years by IPC (International Patent Classification), which is a hierarchical patent classification system. To make our research more specific, we created a set of keywords related to FinTech (financial technology, distributed ledger, cryptocurrency, trading, etc.), and filtered the outcome the IPC results accordingly. 
-Here is a preview of our filtered query: 
+From our PatentsView database,  we queried the FinTech patents of the last 10 years by IPC (International Patent Classification), which is a hierarchical patent classification system. To make our research more specific, we created a set of keywords related to FinTech (financial technology, distributed ledger, cryptocurrency, trading, etc.), and filtered the outcome the IPC results accordingly.
+Here is a preview of our filtered query:
 
 <a id='ipc_head'></a>
 ![Image](img/ipc_head.png)
@@ -257,7 +259,7 @@ Funny story here is that ‘Robert A. West’ holds the most patents in FinTech,
 ![Image](img/fintech_people.png)
                         *Figure 9: TOP 10 people issuers of FinTech patents*
 
-Let us now talk a little bit more about who issues the most FinTech patents among the firms worldwide. 
+Let us now talk a little bit more about who issues the most FinTech patents among the firms worldwide.
 
 <a id='fintech_companies'></a>
 ![Image](img/fintech_companies.png)
@@ -273,13 +275,13 @@ We now focus on the blockchain technology. According to ‘the Economist’, blo
 
 
 
-## 2.3. Artificial Intelligence Patents Analysis 
+## 2.3. Artificial Intelligence Patents Analysis
 
 In this section of the project, we tried to anaylze patents related to Artificila Intelligence (AI) in a  comprehensive manner. We structered the section in the form of question and answer so, for each research question we tried to answer there is a sub-section. Before answering any questions, we gathered all the patents related to AI from 1976 until 2017 along with informations about their inventors, citations, companies and belonging countries.
 
 The method we followed to acquire AI patents is two fold. First, we only consider IPC category "G06" which corresponds to "Computing; Calculating; Counting". According to our researches this is the main category where AI patents fall under. In addition to AI patents, this category contains many others and therefore, we only considered patent that has one of the AI related keywords in their titles. These keywords are gathered from different sources[4](https://phrasee.co/ultimate-glossary-artificial-intelligence-terms/) [5](https://business.twitter.com/en/blog/artificial-intelligence-terms-marketers-need-to-know.html) and can be accessed from [here](data/ai_keywords.txt). We consider a patent related to AI if its description contains one of these keywords. And more information related to IPC categories can be found [here](http://www.wipo.int/classifications/ipc/en/).
 
-As we mentioned earlier, PatensView allows requesting patents only up to 100'000 at a time, to be able to gather all AI patents, we needed to request them in monthly chunks for each year. It is also worth mentioning that, it is required to clean the dataset since it was a bit messy in its raw form. Structure of the resulting dataset can be seen Table 2.1.
+As we mentioned earlier, PatensView allows requesting patents only up to 100'000 at a time, to be able to gather all AI patents, we needed to request them in monthly chunks for each year. It is also worth mentioning that, it is required to clean the dataset since it was a bit messy in its raw form. Structure of the resulting dataset can be seen Table 2.3.1.
 
 | **ID** | **Title** | **Citations** | **Country** | **Organization** | **Inventor ID** | **Inventor Name** | **Year** | **Month** |
 |------|------|------|------|------|------|------|------|------|
@@ -289,11 +291,11 @@ As we mentioned earlier, PatensView allows requesting patents only up to 100'000
 | 3967241 | Pattern recognition system | 24 | JP | Ricoh Co. Ltd. | 3967241 | Ryuichi Kawa | 1976 | 6 |
 | 3967243 | Character pattern normalization... | 17 | JP | Kabushiki Kaisha Photron | 3967241 | Ryuichi Kawa | 1976 | 6 |
 
-*Table 2.1: Sample Rows from the Dataset of Artificial Intelligence Related Patents*
+*Table 2.3.1: Sample Rows from the Dataset of Artificial Intelligence Related Patents*
 
 At this point, we have the required data to be able to start answering questions. We wanted start with a basic one.
 
-## 2.1.1. Which are the most cited patents (by other US patents) within the field of artificial Intelligence?
+## 2.3.1. Which are the most cited patents (by other US patents) within the field of artificial Intelligence?
 
 In our initial analysis we observe that, the patent dataset has a field for number of times that a particular patent cited by other patents however, further analysis showed that this field based only on US patents. More clearly, the description of this field is as follows: "Number of times the patent was cited by other US patents". Consequently, we don't have information about citations from other countries and decided to restrict the scope of this question into citation made only by US patents.
 
@@ -307,7 +309,7 @@ Note that actual patents are not only from US, just the number of citation that 
 | 6430539 | Predictive modeling of consumer financial behavior | 392 | US | HNC Software, Inc. | Ted E. Dunning | 2002 |
 | 8035624 | Computer vision based touch screen | 331 | US | Intellectual Ventures I LLC | Philip L. Gleckman | 2011 |
 
-*Table 2.2: Sample rows from Artificial Intelligence Patents Rankings by Citation Numbers*
+*Table 2.3.2: Sample rows from Artificial Intelligence Patents Rankings by Citation Numbers*
 
 Because of space concerns we only put a sample from top-cited AI patents, the whole ranking can be reached from our [notebook](LINK REQUIRED).
 
@@ -317,7 +319,7 @@ Another expected situation is that if a patent is granted earlier than others th
 
 As we mentioned, we don't have information about number of citations that a patent get by other patents apart from citations by US patents. This means that we don't have a global picture of patent citations and for this reason, we decided restrict this part of our study to only analyzing top cited patents (as we did above). Since our study is not country specific, analyzing citation data we have would only be related to US and therefore  wouldn't align with the purpose our study. Next, we move into more detailed analysis of AI patents.
 
-## 2.1.2. How much artificial Intelligence related patents granted through years and what its the ratio of them among other patents?
+## 2.3.2. How much artificial Intelligence related patents granted through years and what its the ratio of them among other patents?
 
 Related to above question, we also hope to investigate following ideas. We know from common knowledge that AI related researches increased and decreased again during past decades, can we observe this patern by analysing the number of patents granted through years (in 1900s)? AI is also, one of the most popular area of research in today's world. Will these popularity will fade away like it did in the past or the haracteristic of the popularity trend is different this time?
 
@@ -325,13 +327,13 @@ To answer this question, we calculated number of AI related patents for each yea
 
 <a id='number_ai_patents_by_year'></a>
 ![Image](img/number_ai_patents_by_year.png)
-*Figure 2.1: Number of Artificial Intelligence Related Patents in Years*
+*Figure 2.3.1: Number of Artificial Intelligence Related Patents in Years*
 
-From this figure, it seems that there are two periods of time where number of AI patents raised that are around 1986 and 2006. Other than these periods, the amount of AI related patent seems pretty steady. But considering that overall number of patents has also increased over years, to be able to see the whole picture and make a more complete analysis, we also need to check the percentage of AI patents among all patents through years (Figure 2.2).
+From this figure, it seems that there are two periods of time where number of AI patents raised that are around 1986 and 2006. Other than these periods, the amount of AI related patent seems pretty steady. But considering that overall number of patents has also increased over years, to be able to see the whole picture and make a more complete analysis, we also need to check the percentage of AI patents among all patents through years (Figure 2.3.2).
 
 <a id='percentage_ai_patents_by_year'></a>
 ![Image](img/percentage_ai_patents_by_year.png)
-*Figure 2.2: Percentage of Artificial Intelligence Related Patents in Years*
+*Figure 2.3.2: Percentage of Artificial Intelligence Related Patents in Years*
 
 There are couple of observations worth mentioning about these figures. **First** of all, above graph starts with a decline from 1976. We already know that AI was popular field of research at 1960s (e.g. Artificial Neural Networks invented in this period.) and its popularity started to decline around 1970s (because of insufficient computing power and datasets). Although, we don't have information of patents in 1960s, we can see that the graph starts with a steady line in 1976 then, rapidly declines in 1977. It continues to fall for 3 years until it hits the lowest value in 1980.
 The rate in 1977 is only reached again in 1989 which is 12 years lates.  So, the graph confirms our knowledge about the popularity of AI researches in 1960s. With this information, we believe that it is safe to assume, percentage of AI patents is an indication of popularity in AI researches. **Another** interesting point is that percentage of AI patents dramatically increases from 1987 to 1994 then, stays steady about 3 years until it starts to decline again for 5 years, until 2002. The rate of AI patents in 1996 is only reached after 10 years later, around 2006. We can see that this trend is pretty similar to 1960s', it starts with a rapid increase, followed by a steady period then, a decrease for couple of years and in both situation, around 10 years had to past before the rate came back to where it was. In light of this information, we can try to analyze the **current situation**. We see that there is a dramatic increase on patent rates from 2002 to 2012 then, it stays about the same with minor fluctuations. The characteristic that increasing rapidly and entering into steady phase is pretty similar to what we observed in last decades however it seems that the steady phase are not followed by a decline since the rate starts to increase again in 2016. Although this might be an indication that popularity of AI related researches won't decline this time, it is still too early to infer that. The first two phases were similar to what has been observed in the past decades but it requires time (at least couple more years) to decide whether this time will characteristic of the trend will be different or not.
@@ -340,13 +342,13 @@ One other valuable observation is that the AI researches are dramatically increa
 
 As the next step, we wanted to analyse inventors.
 
-## 2.1.3. Who are the most prolific inventors in the field of artificial intelligence?
+## 2.3.3. Who are the most prolific inventors in the field of artificial intelligence?
 
 Since we already have the required data, we just calculated number of patents that delivered by each inventors. Top inventors with highest number of patents in a sorted order can be seen in the following figure.
 
 <a id='prolific_inventors'></a>
 ![Image](img/prolific_inventors.png)
-*Figure 2.3: List of Prolific Inventors in the Field of Artificial Intelligence*
+*Figure 2.3.3: List of Prolific Inventors in the Field of Artificial Intelligence*
 
 There is not much to interpret about this table (since we are already analyzing related companies and countries in other parts of the study). However, here is some information about top AI patent holders which confirms that we are on the right track.
 
@@ -356,35 +358,35 @@ There is not much to interpret about this table (since we are already analyzing 
 
 Now, we move into company-wise analysis of AI related patents.
 
-## 2.1.4. Which companies are holding most artificial Intelligence related patents?
+## 2.3.4. Which companies are holding most artificial Intelligence related patents?
 
 To answer this question, we grouped the dataset according to companies and sorted them by number of patents. The findings are as follows.
 
 <a id='number_of_ai_patents_by_company'></a>
 ![Image](img/number_of_ai_patents_by_company.png)
-*Figure 2.4: Companies Holding the most Artificial Intelligence Related Patens*
+*Figure 2.3.4: Companies Holding the most Artificial Intelligence Related Patens*
 
 As expected, IBM who has the highest number of patents in all categories has also the most AI related patens. Microsoft and Google takes the second and third places which are two of the biggest technology companies that are also known for their interest in AI researches.
 
 Although this figure reveals valuable information about companies that are highly active in AI researches, we also wanted to examine companies that devotes most of their resources into AI related researches and analyze the benefit of these researches to companies. More specifically, the question we want to answer is as follows.
 
-## 2.1.5. Is there a relationship between investing in artificial intelligence researches and being among top companies (according to  Fortune 500 list)?
+## 2.3.5. Is there a relationship between investing in artificial intelligence researches and being among top companies (according to  Fortune 500 list)?
 
-In order to find how much resources are invested in AI researches, we decided to calculate ratio of AI patents among all other patents that a company have for each company. We just calculated number of AI related patents for each company and already have the information about [overall number of patents](number_of_patents_by_companies) (from first part of our study). With these, we calculate the percentage of AI related patents  within companies (Figure 2.5)
+In order to find how much resources are invested in AI researches, we decided to calculate ratio of AI patents among all other patents that a company have for each company. We just calculated number of AI related patents for each company and already have the information about [overall number of patents](number_of_patents_by_companies) (from first part of our study). With these, we calculate the percentage of AI related patents  within companies (Figure 2.3.5)
 
 One important point to note is that for some companies, it is the case that they only have couple of patents which are all related to AI so, percentage of AI patent for this company ends up being 100%. Since, we only insterested in big companies in this study, we decided to remove all the companies that has less than 1'300 patents in general. Basically, we are interested in big companies that are devoted some part of their resources into AI researches and the correlation between this investments and their ranks.
 
 <a id='percentage_ai_patents_by_companies'></a>
 ![Image](img/percentage_ai_patents_by_companies.png)
-*Figure 2.5: Ratio of Artificial Intelligence Related Patents among All Others by Companies*
+*Figure 2.3.5: Ratio of Artificial Intelligence Related Patents among All Others by Companies*
 
 This figure reveals the rankings of companies based on how much of their patents are related to AI and this intuitively means that how much of their resources devoted to AI researches.
 
-Now, we wanted to see whether or not investing AI research would end up increasing the rank of a company. For this purpose we decided to match companies we found (by the number of AI patents) with the companies in [Fortune 500 list](http://fortune.com/2015/06/13/fortune-500-tech/)[3]. Note that within that list, we only take companies related to computer software and information systems into account since it is highly probable that only these companies made considerable amount of researches related to AI. The results are demonstrated in Figure 2.6.
+Now, we wanted to see whether or not investing AI research would end up increasing the rank of a company. For this purpose we decided to match companies we found (by the number of AI patents) with the companies in [Fortune 500 list](http://fortune.com/2015/06/13/fortune-500-tech/)[3]. Note that within that list, we only take companies related to computer software and information systems into account since it is highly probable that only these companies made considerable amount of researches related to AI. The results are demonstrated in Figure 2.3.6.
 
 <a id='percentage_ai_vs_fortune'></a>
 ![Image](img/percentage_ai_vs_fortune.png)
-*Figure 2.6: Top Companies Invested in AI Researches and Their Presence in Fortune 500 List*
+*Figure 2.3.6: Top Companies Invested in AI Researches and Their Presence in Fortune 500 List*
 
 From this figure we can see that companies that invested in AI research more (which derived from proportion of AI patents they have) is more likely be in the Fortune 500 list. As the AI research proportion decrease chance of a company being among the top companies also, decreases. We can see that there is only one company in the Fortune list with less than 0.2 AI patent ratio which corresponds to rank 50 in our list (as seen in the figure). This means, all the technology companies (except one) in Fortune 500 list are from top 50 in the ranking we calculated by AI patent ratio.
 
@@ -407,17 +409,17 @@ For ease-of-read, here is the complete list of top AI invested companies that ma
 | Qualcomm, Inc.| 0.22 |
 | Intel Corporation | 0.18 |
 
-*Table 2.3: Top Companies Invested in AI Researches and Their Presence in Fortune 500 List*
+*Table 2.3.3: Top Companies Invested in AI Researches and Their Presence in Fortune 500 List*
 
 With that, the company-wise analysis is concluded and now, we can move into investigating countries.
 
-## 2.1.6. Which countries have the most patents related to artificial intelligence?
+## 2.3.6. Which countries have the most patents related to artificial intelligence?
 
-We though that the best way to indicate the overall AI related patents that each countries while also displaying the change in number in years is use stacked bar chart (Figure 2.7). Note that, there is also an interactive visualization that displays number of AI related patent throughout years in our [notebook](LINK REQUIRED).
+We though that the best way to indicate the overall AI related patents that each countries while also displaying the change in number in years is use stacked bar chart (Figure 2.3.7). Note that, there is also an interactive visualization that displays number of AI related patent throughout years in our [notebook](LINK REQUIRED).
 
 <a id='number_ai_by_countries'></a>
 ![Image](img/number_ai_by_countries.png)
-*Figure 2.7: Countries that Has the Highest number of Artificial Intelligence Related Patens in Years*
+*Figure 2.3.7: Countries that Has the Highest number of Artificial Intelligence Related Patens in Years*
 
 From this map, it is clear that number of AI related patents has increase signiﬁcantly over years. We also, observe that United States and Japan takes the lead again and most of these countries are the ones known for their technological advancement. It is worth mentioning that although Isreal (IL) couldn't make it to the top in terms of [total number of patents](#last_year_patents_by_country), it is 5th country in AI related patents ranking. This situation is exceedingly interesting since Isreal is one of the most impactful countries in the Middle-east and AI researches might have an effect on that. We examine this idea more in the following section.
 
@@ -425,13 +427,13 @@ Similar to [the map we draw](#patents_by_country) in the first part of the proje
 
 <a id="ai_patents_by_country"></a>
 ![Image](img/ai_patents_by_country.png)
-*Map 1: Dsitribution of AI Related Patents around the world*
+*Map 2.3.1: Dsitribution of AI Related Patents around the world*
 
 Last question we wanted to answer is related to a recent statement made by *Putin* which is “the nation that leads in artificial intelligence will be the ruler of the world”[1].
 
-## 2.1.7. What is the relationship between number of artificial intelligence related patents that countries have and the rank of their defence industries?
+## 2.3.7. What is the relationship between number of artificial intelligence related patents that countries have and the rank of their defence industries?
 
-To be able to answer this question we needed a reliable ranking for countries' defense industries. We though that using [Global Defense Companies 100 list](http://people.defensenews.com/top-100/)[2] (from Defense News), to extract the revenues of defense companies along with belonging countries then, grouping these companies by countries and summing up their revenues would give us a reasonable estimation for defense industry rankings of countries. The ranking (top 10) we calculated can be seen in Table 2.4.
+To be able to answer this question we needed a reliable ranking for countries' defense industries. We though that using [Global Defense Companies 100 list](http://people.defensenews.com/top-100/)[2] (from Defense News), to extract the revenues of defense companies along with belonging countries then, grouping these companies by countries and summing up their revenues would give us a reasonable estimation for defense industry rankings of countries. The ranking (top 10) we calculated can be seen in Table 2.3.4.
 
 | **Country** | **Revenue (in Milions)** |
 |------|------|
@@ -446,7 +448,7 @@ To be able to answer this question we needed a reliable ranking for countries' d
 | IN | 3682 |
 | DE | 3421 |
 
-*Table 2.3: Defense Industry Ranking of Countries according to Revenues retrieved from Defence News*
+*Table 2.3.4: Defense Industry Ranking of Countries according to Revenues retrieved from Defence News*
 
 Our prior analysis showed that similar to company analysis, only half of countries made it to the top defence industries list. Consequently, we decided to follow the same method as before and check which countries from our top list (based number of AI patents) made it to the top defence industries list.
 
@@ -455,7 +457,7 @@ One other point to mention about our choice of implementation is that unlike com
 
 <a id='percentage_ai_vs_defence'></a>
 ![Image](img/percentage_ai_vs_defence.png)
-*Figure 2.8: Countries that have Highest number of AI Related Patents and Their Presence in Top Defence Industries List*
+*Figure 2.3.8: Countries that have Highest number of AI Related Patents and Their Presence in Top Defence Industries List*
 
 Again, it is obvious that countries that have more AI related patents are much more likely to be in top defence industries list. 16 out of 47 countries (in our list based on AI related patents) were also made it to the top defence industries list. Moreover, the figure reveals that 13 of these 16 countries has more than 10 patents in AI. It can also be seen that 15 out of top 20 countries in our list (based on AI related patents) were present in top defence industries list. It can also be seen from the figure, the frequency of red dots (countries in top defence industries list) increasing as the number of the AI related patents increase.
 
@@ -472,25 +474,25 @@ As a result, we can actually confirm that countries which are making more revenu
 
 # References
 
-[1] Vincent, J. (2017, September 4). *The Nation that Leads in AI Will be the Ruler of the World*. Retrieved from https://www.theverge.com/2017/9/4/16251226/russia-ai-putin-rule-the-world.
+[1] Vincent, J. (2017, September 4). *The Nation that Leads in AI Will be the Ruler of the World*. Retrieved from [https://www.theverge.com/2017/9/4/16251226/russia-ai-putin-rule-the-world](https://www.theverge.com/2017/9/4/16251226/russia-ai-putin-rule-the-world)
 
-[2] (2017, December 19). *Top 100 for 2017*. Retrieved from http://people.defensenews.com/top-100/
+[2] Defense News. (2017, December 19). *Top 100 for 2017*. Retrieved from [http://people.defensenews.com/top-100/](http://people.defensenews.com/top-100/)
 
-[3] Griffith, E. (2016, June 7). *The Top Technology Companies of the Fortune 500*. Retrieved from http://fortune.com/2016/06/07/fortune-500-technology-companies/
+[3] Griffith, E. (2016, June 7). *The Top Technology Companies of the Fortune 500*. Retrieved from [http://fortune.com/2016/06/07/fortune-500-technology-companies/](http://fortune.com/2016/06/07/fortune-500-technology-companies/)
 
-[4] (2017, December 19). *Ultimate Glossary of Artificial Intelligence Terms* https://phrasee.co/ultimate-glossary-artificial-intelligence-terms/
+[4] Phrasee. (2017, December 19). *Ultimate Glossary of Artificial Intelligence Terms* [https://phrasee.co/ultimate-glossary-artificial-intelligence-terms/](https://phrasee.co/ultimate-glossary-artificial-intelligence-terms/)
 
-[5] Kniahynyckyj, R. (2017, August 15). *Artificial Intelligence: Terms marketers need to know* https://business.twitter.com/en/blog/artificial-intelligence-terms-marketers-need-to-know.html
+[5] Kniahynyckyj, R. (2017, August 15). *Artificial Intelligence: Terms marketers need to know* [https://business.twitter.com/en/blog/artificial-intelligence-terms-marketers-need-to-know.html](https://business.twitter.com/en/blog/artificial-intelligence-terms-marketers-need-to-know.html)
 
-[6] (2017, December 19). *Philip S. Yu*. https://en.wikipedia.org/wiki/Philip_S._Yu
+[6] Wikipedia. (2017, December 19). *Philip S. Yu*. [https://en.wikipedia.org/wiki/Philip_S._Yu](https://en.wikipedia.org/wiki/Philip_S._Yu)
 
-[7] (2017, December 19). *Dharmendra Modha*. https://en.wikipedia.org/wiki/Dharmendra_Modha
+[7] Wikipedia. (2017, December 19). *Dharmendra Modha*. https://en.wikipedia.org/wiki/Dharmendra_Modha(https://en.wikipedia.org/wiki/Dharmendra_Modha)
 
 [10] Taming the Beast: A Scientific Definition of Fintech, *Patrick Schueffel*
-https://hesso.tind.io/record/1996/files/Schueffel_Tamingthebeast_2016.pdf
+[https://hesso.tind.io/record/1996/files/Schueffel_Tamingthebeast_2016.pdf](https://hesso.tind.io/record/1996/files/Schueffel_Tamingthebeast_2016.pdf)
 
 [11] Trading technologies International Inc., *Bloomberg*
-https://www.bloomberg.com/research/stocks/private/snapshot.asp?privcapId=2907578
+[https://www.bloomberg.com/research/stocks/private/snapshot.asp?privcapId=2907578](https://www.bloomberg.com/research/stocks/private/snapshot.asp?privcapId=2907578)
 
 [12] An Overview of the Blockchain Patent Landscape, *Clarivate Analytics*
-https://clarivate.com/blog/overview-blockchain-patent-landscape/
+[https://clarivate.com/blog/overview-blockchain-patent-landscape/](https://clarivate.com/blog/overview-blockchain-patent-landscape/)
