@@ -111,7 +111,14 @@ With that, we conclude the first part of the project and move into more advanced
 
 ## 2. Sector-Specific Analysis of Granted Patents
 
-## 2.1. Analysis of Patents related to Artificial Intelligence
+## 2.2. FinTech Patents Analysis
+
+Financial Technology (or FinTech) [11](https://hesso.tind.io/record/1996/files/Schueffel_Tamingthebeast_2016.pdf) is a ‘new’ financial industry that applies technology to improve financial activities . Among the several applications of FinTech we can cite a few such as new automated financial advisors, P2P lending platforms, new contactless payment technologies such (NFC, Twint, Apple Pay, etc.), blockchain application and development of cryptocurrencies (e.g. bitcoin, ethereum, etc.) personal finance applications that aim to help individuals and businesses develop a budget, and many more. 
+
+According to Google Trends, the word “FinTech” is searched 201’000 times each month on average, and this number is growing very fast in the future. Below is  a graph showing the interest over the last 6 years for FinTech.  A value of 100 is the peak popularity for the term. A value of 50 means that the term is half as popular.
+
+
+## 2.3. Artificial Intelligence Patents Analysis 
 
 In this section of the project, we tried to anaylze patents related to Artificila Intelligence (AI) in a  comprehensive manner. We structered the section in the form of question and answer so, for each research question we tried to answer there is a sub-section. Before answering any questions, we gathered all the patents related to AI from 1976 until 2017 along with informations about their inventors, citations, companies and belonging countries.
 
@@ -310,16 +317,16 @@ As a result, we can actually confirm that countries which are making more revenu
 
 # References
 
-[1] Vincent, J. (2017, September 4). *The Nation that Leads in AI Will be the Ruler of the World*. Retrieved from [https://www.theverge.com/2017/9/4/16251226/russia-ai-putin-rule-the-world](https://www.theverge.com/2017/9/4/16251226/russia-ai-putin-rule-the-world).
+[1] Vincent, J. (2017, September 4). *The Nation that Leads in AI Will be the Ruler of the World*. Retrieved from https://www.theverge.com/2017/9/4/16251226/russia-ai-putin-rule-the-world.
 
-[2] (2017, December 19). *Top 100 for 2017*. Retrieved from [http://people.defensenews.com/top-100/](http://people.defensenews.com/top-100/)
+[2] (2017, December 19). *Top 100 for 2017*. Retrieved from http://people.defensenews.com/top-100/
 
-[3] Griffith, E. (2016, June 7). *The Top Technology Companies of the Fortune 500*. Retrieved from [http://fortune.com/2016/06/07/fortune-500-technology-companies/](http://fortune.com/2016/06/07/fortune-500-technology-companies/)
+[3] Griffith, E. (2016, June 7). *The Top Technology Companies of the Fortune 500*. Retrieved from http://fortune.com/2016/06/07/fortune-500-technology-companies/
 
-[4] (2017, December 19). *Ultimate Glossary of Artificial Intelligence Terms* [https://phrasee.co/ultimate-glossary-artificial-intelligence-terms/](https://phrasee.co/ultimate-glossary-artificial-intelligence-terms/)
+[4] (2017, December 19). *Ultimate Glossary of Artificial Intelligence Terms* https://phrasee.co/ultimate-glossary-artificial-intelligence-terms/
 
-[5] Kniahynyckyj, R. (2017, August 15). *Artificial Intelligence: Terms marketers need to know*. Retrieved from [https://business.twitter.com/en/blog/artificial-intelligence-terms-marketers-need-to-know.html](https://business.twitter.com/en/blog/artificial-intelligence-terms-marketers-need-to-know.html)
+[5] Kniahynyckyj, R. (2017, August 15). *Artificial Intelligence: Terms marketers need to know*. Retrieved from https://business.twitter.com/en/blog/artificial-intelligence-terms-marketers-need-to-know.html
 
-[6] (2017, December 19). *Philip S. Yu*. Retrieved from [https://en.wikipedia.org/wiki/Philip_S._Yu](https://en.wikipedia.org/wiki/Philip_S._Yu)
+[6] (2017, December 19). *Philip S. Yu*. Retrieved from https://en.wikipedia.org/wiki/Philip_S._Yu
 
-[7] (2017, December 19). *Dharmendra Modha*. Retrieved from [https://en.wikipedia.org/wiki/Dharmendra_Modha](https://en.wikipedia.org/wiki/Dharmendra_Modha)
+[7] (2017, December 19). *Dharmendra Modha*. Retrieved from https://en.wikipedia.org/wiki/Dharmendra_Modha
