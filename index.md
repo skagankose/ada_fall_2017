@@ -32,6 +32,7 @@ In the first step, we wanted display the evolution of granted patents during the
 
 <a id="number_of_patents_by_years"></a>
 ![Image](img/number_of_patents_by_years.png)
+
 *Figure 1: Number of Granted Patents through Years*
 
 It is clear from this figure that granted patents has dramatically surged in numbers. This situation is expected since the amount of researches has also increased all over the world in 21st century and continue to do so.
