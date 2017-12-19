@@ -311,9 +311,15 @@ As a result, we can actually confirm that countries which are making more revenu
 # References
 
 [1] Vincent, J. (2017, September 4). *The Nation that Leads in AI Will be the Ruler of the World*. Retrieved from https://www.theverge.com/2017/9/4/16251226/russia-ai-putin-rule-the-world.
+
 [2] (2017, December 19). *Top 100 for 2017*. Retrieved from http://people.defensenews.com/top-100/
+
 [3] Griffith, E. (2016, June 7). *The Top Technology Companies of the Fortune 500*. Retrieved from http://fortune.com/2016/06/07/fortune-500-technology-companies/
+
 [4] (2017, December 19). *Ultimate Glossary of Artificial Intelligence Terms* https://phrasee.co/ultimate-glossary-artificial-intelligence-terms/
+
 [5] Kniahynyckyj, R. (2017, August 15). *Artificial Intelligence: Terms marketers need to know*. Retrieved from https://business.twitter.com/en/blog/artificial-intelligence-terms-marketers-need-to-know.html
+
 [6] (2017, December 19). *Philip S. Yu*. Retrieved from https://en.wikipedia.org/wiki/Philip_S._Yu
+
 [7] (2017, December 19). *Dharmendra Modha*. Retrieved from https://en.wikipedia.org/wiki/Dharmendra_Modha
