@@ -351,6 +351,9 @@ We now focus on the blockchain technology. According to ‘the Economist’, blo
 ![Image](img/blockchain_firms_quote.png)
     *Figure 34: Leader firms in Blockchain related patents*
 
+We are in an era where blockchain is taking over the FinTech industry, especially after the birth of new cryptocurrencies. As of now, the market capitalization of bitcoin reached over $291 Billions! At the same time, Japan government passed a law a few months ago recognizing bitcoin as national currency.
+
+The world will definitely be talking about blockchain many years to come!
 
 
 ## 2.3. Artificial Intelligence Patents Analysis
