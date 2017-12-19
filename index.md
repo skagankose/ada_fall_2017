@@ -111,6 +111,114 @@ With that, we conclude the first part of the project and move into more advanced
 
 ## 2. Sector-Specific Analysis of Granted Patents
 
+This part aims to study the evolution of granted patents per sector of interest (Energy, Fintech and AI).
+
+To retreive the patents from the Patentsview database, keywords and IPC symbols are used. IPC symbols allows to classify patents from different sector. For example the IPC symbol F01B 3 (F = Mechanical engineering, lighting, heating, weapon, 01 = Machines or engines in general, B = Steam engines, 3 = Reciprocating-pison machines or engines with cylender axes). Keywords allows us to confirm that the patent technology from IPC correspond exactly to what we are looking for.
+
+In order to help us to find the IPC symbols corresponds to which sector, the website http://www.wipo.int/classifications/ipc/en/ is used. A research can be carried out by keywords and then the every IPC symbols are checked separately to confirm they match with our sector criterium.
+
+## 2.1 Energy Patents Analysis
+
+Energy is a high-end sector that changed significantly over the years. The renewable energy sector became more and more unavoidable to fight against global warming. Some new technologies emerged whereas some other became less attractive. This part of the study aims to highlight the new trends in energy. Three different categories will be compared : Renewable energy, coal and gas, nuclear energy. By analyzing this sector, a study will be carried out to understand how countries are taking more consideration of global warming, trying to get rid of fossil energy or decrease the nuclear research. Inside the renewable category, many subcategories will be studied : Solar photovoltaic, solar thermic, wind, hydro, wave and tidal, carbon capture and storage. All these technologies will be compare from 2006 to 2016.
+
+The keywords used for the renewable energy technology are given in the paper "Patent-based Technology report - Alternative Energy Technology" made by the "World Intellectual Property Organization", which gives a fairly accurate result. For the nuclear/coal and gas sector, the website http://www.wipo.int/classifications/ipc/en/ is used. For the latter, keywords are researched and every potential IPC symbols are studied separately to find a match in the category.
+
+First, using patentsview API, queries are send in the database to obtain the number of patent over years for every sectors.
+
+### Evolution of the different sectors in energy
+
+<a id='patents_solar_photo'></a>
+![Image](img/patents_solar_photo.png)
+                        *Figure 7: Evolution of solar photovoltaic technology*
+                                              
+<a id='patents_solar_thermal'></a>
+![Image](img/patents_solar_thermal.png)
+                        *Figure 7: Evolution of solar thermic technology*
+ 
+Even if the photovoltaic technology is more important than the solar thermic technology in term of number of patents, both sectors had a huge increase, espessially in the past 4 years
+
+<a id='patents_wind'></a>
+![Image](img/patents_wind.png)
+                        *Figure 7: Evolution of wind technology*
+                    
+Wind energy has more patents than solar energy in 2007/2008. However if we sum up both solar technologies, in 2016 wind and solar energy have a similar number of patents.                    
+                        
+<a id='patents_hydro'></a>
+![Image](img/patents_hydro.png)
+                        *Figure 7: Evolution of hydropower technology* 
+ 
+Hydro does not have a large number of patent. Howerver, we could expect that this technology is outdated since dams were built many years ago (at least in Switzerland). In fact, as the other energy sectors and the number of patent in general, hydroelectric technology also evolved fast in the past.
+                     
+<a id='patents_wave_and_tidal'></a>
+![Image](img/patents_wave_and_tidal.png)
+                        *Figure 7: Evolution of wave and tidal technology* 
+                        
+As we can observe, wave and tidal turbines were irrelevant in 2007. In the next years this technology became more important and the number of patent became hundred times greater in 10 years.
+
+<a id='patents_carbon_capture'></a>
+![Image](img/patents_carbon_capture.png)
+                        *Figure 7: Evolution of carbon capture technology* 
+
+Carbon capture almost didn't exist in 2007 but increased greatly in the past years although the number of patents is very volatile
+
+<a id='patents_coal_and_gas'></a>
+![Image](img/patents_coal_and_gas.png)
+                        *Figure 7: Evolution of coal and gas technology* 
+
+As the other sector, fossil energy had an increase in research from 2013 to 2015. However, it decreases in 2016. We can expect the trend to contimue in that direction.
+
+<a id='patents_nuclear'></a>
+![Image](img/patents_nuclear.png)
+                        *Figure 7: Evolution of nuclear technology* 
+                        
+The number of patents for nuclear energy also blew up in from 2013 to 2016. Even the nuclear catastrophe that occured in the pas didn't change the number of patent application in that area.                       
+
+### Comparison between renewable energy vs coal and gas technologies
+
+<a id='patents_renewable_vs_coal_and_gas'></a>
+![Image](img/patents_renewable_vs_coal_and_gas.png)
+                        *Figure 7: Renewable vs coal and gas technologies* 
+                        
+The plot above shows clearly that there was the same number of patent between fossil energy and renewable around 2007 and 2009. After 2009 it can be note that the patent applications for renewable energy evolved much faster. In 2016, the number of patent in coal and gas decreased, we can then expect that the difference between both categories will increase even faster in the future.
+
+### Comparison of growth in number of patents
+
+The evolution of granted patent in energy can be compared between each other for the past 10 years. In order to achieve this pupose, we can compute the growth of patents per year according to the folowing formula :
+
+\begin{equation*}
+Growth  = \frac{nb\ patents\ year\ i+1\ -\ nb\ patents\ year\ i}{nb\ patent\ year\ i}
+\end{equation*}
+
+Below, the plot showing the average growth in patent application is displayed. The black straight represents the standard deviation.
+
+<a id='avg_growths_energy'></a>
+![Image](img/avg_growths_energy.png)
+                        *Figure 7: Average growth for the different technologies* 
+
+The bar plot aborve highlights the fact that solar energy is a trend nowadays. Carbon capture is a very new technology that is espected to evolve very fast in the future. However, as we can see in the table containing the number of patent, this sector do not contain many patents and the standard deviation is large. Therefore the future of this technology is uncertain. By looking at the 3 average growth on the right, it can be observed that renewable energy has evolved more in the past than fossil energy. Despite the nuclear catastrophe in Fukushima, the number of patents in that sector still exploded and evolved faster espessially in the past few years. However, the number of patents in renewable and fossil energy is much larger. It is also important to note that the patents in nuclear energy might also include the research in making the technology safer.
+
+### Correlation matrix
+
+A study of the relation between the growth in the different sector can be studied. For exemple, it can shown that when the hydro sector grows, the wind sector will grow as well. A correlation matrix can be computed to highlight these relation. The more the correlation is close to one, the more both sector are growing together.
+
+<a id='correl_matrix_energy'></a>
+![Image](img/correl_matrix_energy.PNG)
+                        *Figure 7: correlation matrix between the different technologies* 
+
+FIt can be observed that the technology in solar termic and photovoltaic evolve together. Wind and Hydro technologies seems to be highly correlated. We could suppose that those technology are complementary and that governements encorage investments in both technologies at the same time. Tidal and wave as well as carbon capture are not correlated to any other energy secors. It can be explained that those technologies are new compare to the others. It is interesting to note that carbon and gas technologies have high correlation with nuclear energy. If some countries are not focus on green energy, the investment in these 2 sectors will be fostered. With a correlation of 0.97 between the wind energy and renewable energy in general, it can be deducted that wind energy represent the general trend in green energy.
+
+### Comparisons of renewable energy patents between companies and countries
+
+For this next study, only the patents between 2010 and 2016 will be. It takes less compilation time and shows a sufficient ammount of date for companies and countries.
+
+<a id='word_map_renewable'></a>
+![Image](img/word_map_renewable.PNG)
+                        *Figure 7: patents application in renewable energy around the world*
+                        
+This map shows the number of USPTO patents application around the world
+
+
+
 ## 2.2. FinTech Patents Analysis
 
 Financial Technology (or FinTech) [10] is a ‘new’ financial industry that applies technology to improve financial activities . Among the several applications of FinTech we can cite a few such as new automated financial advisors, P2P lending platforms, new contactless payment technologies such (NFC, Twint, Apple Pay, etc.), blockchain application and development of cryptocurrencies (e.g. bitcoin, ethereum, etc.) personal finance applications that aim to help individuals and businesses develop a budget, and many more. 
