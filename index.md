@@ -131,46 +131,54 @@ First, using patentsview API, queries are send in the database to obtain the num
 
 <a id='patents_solar_photo'></a>
 ![Image](img/patents_solar_photo.png)
+
                         *Figure 7: Evolution of solar photovoltaic technology*
 
 <a id='patents_solar_thermal'></a>
 ![Image](img/patents_solar_thermal.png)
+
                         *Figure 8: Evolution of solar thermic technology*
 
 Even if the photovoltaic technology is more important than the solar thermic technology in term of number of patents, both sectors had a huge increase, espessially in the past 4 years
 
 <a id='patents_wind'></a>
 ![Image](img/patents_wind.png)
+
                         *Figure 9: Evolution of wind technology*
 
 Wind energy has more patents than solar energy in 2007/2008. However if we sum up both solar technologies, in 2016 wind and solar energy have a similar number of patents.                    
 
 <a id='patents_hydro'></a>
 ![Image](img/patents_hydro.png)
+
                         *Figure 10: Evolution of hydropower technology*
 
 Hydro does not have a large number of patent. Howerver, we could expect that this technology is outdated since dams were built many years ago (at least in Switzerland). In fact, as the other energy sectors and the number of patent in general, hydroelectric technology also evolved fast in the past.
 
 <a id='patents_wave_and_tidal'></a>
 ![Image](img/patents_wave_and_tidal.png)
+
                         *Figure 11: Evolution of wave and tidal technology*
 
 As we can observe, wave and tidal turbines were irrelevant in 2007. In the next years this technology became more important and the number of patent became hundred times greater in 10 years.
 
 <a id='patents_carbon_capture'></a>
 ![Image](img/patents_carbon_capture.png)
+
                         *Figure 12: Evolution of carbon capture technology*
 
 Carbon capture almost didn't exist in 2007 but increased greatly in the past years although the number of patents is very volatile
 
 <a id='patents_coal_and_gas'></a>
 ![Image](img/patents_coal_and_gas.png)
+
                         *Figure 13: Evolution of coal and gas technology*
 
 As the other sector, fossil energy had an increase in research from 2013 to 2015. However, it decreases in 2016. We can expect the trend to contimue in that direction.
 
 <a id='patents_nuclear'></a>
 ![Image](img/patents_nuclear.png)
+
                         *Figure 14: Evolution of nuclear technology*
 
 The number of patents for nuclear energy also blew up in from 2013 to 2016. Even the nuclear catastrophe that occured in the pas didn't change the number of patent application in that area.                       
@@ -179,6 +187,7 @@ The number of patents for nuclear energy also blew up in from 2013 to 2016. Even
 
 <a id='patents_renewable_vs_coal_and_gas'></a>
 ![Image](img/patents_renewable_vs_coal_and_gas.png)
+
                         *Figure 15: Renewable vs coal and gas technologies*
 
 The plot above shows clearly that there was the same number of patent between fossil energy and renewable around 2007 and 2009. After 2009 it can be note that the patent applications for renewable energy evolved much faster. In 2016, the number of patent in coal and gas decreased, we can then expect that the difference between both categories will increase even faster in the future.
@@ -195,6 +204,7 @@ Below, the plot showing the average growth in patent application is displayed. T
 
 <a id='avg_growths_energy'></a>
 ![Image](img/avg_growths_energy.png)
+
                         *Figure 16: Average growth for the different technologies*
 
 The bar plot aborve highlights the fact that solar energy is a trend nowadays. Carbon capture is a very new technology that is espected to evolve very fast in the future. However, as we can see in the table containing the number of patent, this sector do not contain many patents and the standard deviation is large. Therefore the future of this technology is uncertain. By looking at the 3 average growth on the right, it can be observed that renewable energy has evolved more in the past than fossil energy. Despite the nuclear catastrophe in Fukushima, the number of patents in that sector still exploded and evolved faster espessially in the past few years. However, the number of patents in renewable and fossil energy is much larger. It is also important to note that the patents in nuclear energy might also include the research in making the technology safer.
@@ -205,6 +215,7 @@ A study of the relation between the growth in the different sector can be studie
 
 <a id='correl_matrix_energy'></a>
 ![Image](img/correl_matrix_energy.PNG)
+
                         *Figure 17: correlation matrix between the different technologies*
 
 FIt can be observed that the technology in solar termic and photovoltaic evolve together. Wind and Hydro technologies seems to be highly correlated. We could suppose that those technology are complementary and that governements encorage investments in both technologies at the same time. Tidal and wave as well as carbon capture are not correlated to any other energy secors. It can be explained that those technologies are new compare to the others. It is interesting to note that carbon and gas technologies have high correlation with nuclear energy. If some countries are not focus on green energy, the investment in these 2 sectors will be fostered. With a correlation of 0.97 between the wind energy and renewable energy in general, it can be deducted that wind energy represent the general trend in green energy.
@@ -215,20 +226,24 @@ For this next study, only the patents between 2010 and 2016 will be. It takes le
 
 <a id='word_map_renewable'></a>
 ![Image](img/word_map_renewable.PNG)
+
                         *Figure 18: patents application in renewable energy around the world*
 
 This map shows the number of USPTO patents application around the world
 
-<a id='companies_solar'></a>
-![Image](img/companies_solar.png)
+<a id='countries_solar'></a>
+![Image](img/countries_solar.png)
+
                         *Figure 19: solar energy by countries*
                         
  <a id='countries_wind_hydro'></a>
 ![Image](img/countries_wind_hydro.png)
+
                         *Figure 20: wind energy and hydro energy by countries*
                         
  <a id='countries_tidal_and_wave_carbon'></a>
 ![Image](img/countries_tidal_and_wave_carbon.png)
+
                         *Figure 21: solar energy by countries*
 
 Every technologies are dominated by the US, especially for solar thermic, hydro, tidal and wave. This is not surprising since USPTO is a US company.
@@ -249,26 +264,32 @@ Renewable energy in gerneral: The ranking follows the general trend of all the s
 
 <a id='companies_solar_photo'></a>
 ![Image](img/companies_solar_photo.png)
+
                         *Figure 22: solar photovoltaic energy by companies*
                         
 <a id='companies_solar_thermal'></a>
 ![Image](img/companies_solar_thermal.png)
+
                         *Figure 23: solar thermic energy by companies*
 
 <a id='companies_wind'></a>
 ![Image](img/companies_wind.png)
+
                         *Figure 24: wind by companies*
                         
 <a id='companies_hydro'></a>
 ![Image](img/companies_hydro.png)
+
                         *Figure 25: hydro by companies*
 
 <a id='companies_tidal_and_wave'></a>
 ![Image](img/companies_tidal_and_wave.png)
+
                         *Figure 26: tidal and wave by companies*
                         
 <a id='companies_carbon_capture'></a>
 ![Image](img/companies_carbon_capture.png)
+
                         *Figure 27: carbon capture by companies*
 
 Different companies are leaders for different sectors:
