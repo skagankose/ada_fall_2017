@@ -87,13 +87,13 @@ In that section, patents are studied by CPC sectors and sorted by top countries.
 ![Image](img/patents_by_categories.png)
 *Figure 4: Number of Granted Patents in the Last Year according to CPC Categories with Bar Charts*
 
-Only some of the figures were drawn because of space concerns. All the figures can be reached from our [notebook](LINK REQUIRED). Almost for all of these categories United States and Japan take the 1st and 2nd place. Switzerland, South Koreas or Germany took the 3rd place according to different CPC categories. To be able to see all of these ranking in a single figure, a stacked bar chart is plotted (Figure 5).
+Only some of the figures were drawn because of space concerns. All the figures can be reached from our [notebook](https://github.com/oussama6703/ada/blob/master/project/Milestone-3.ipynb). Almost for all of these categories United States and Japan take the 1st and 2nd place. Switzerland, South Koreas or Germany took the 3rd place according to different CPC categories. To be able to see all of these ranking in a single figure, a stacked bar chart is plotted (Figure 5).
 
 <a id='patents_by_categories_stacked'></a>
 ![Image](img/patents_by_categories_stacked.png)
 *Figure 5: Number of Granted Patents in the Last Year according to CPC Categories with a Stacked Chart*
 
-To reveal more insights related to patent characteristics, spider charts were used to shed the light on which country is focus on which sector. Below, some figures for certain countries of interest are displayed (United States, Japan, Germany and Switzerland). The rest can be obtained from our [notebook](LINK REQUIRED).
+To reveal more insights related to patent characteristics, spider charts were used to shed the light on which country is focus on which sector. Below, some figures for certain countries of interest are displayed (United States, Japan, Germany and Switzerland). The rest can be obtained from our [notebook](https://github.com/oussama6703/ada/blob/master/project/Milestone-3.ipynb).
 
 <a id='patents_by_categories_spider'></a>
 ![Image](img/patents_by_categories_spider.png)
@@ -483,7 +483,7 @@ For ease-of-read, here is the complete list of top AI invested companies that ar
 
 ## 2.3.6. Which countries have the most patents related to AI?
 
-The following bar chart displays the overall AI for different years 2(Figure 2.3.7). There is also an interactive visualization that displays the number of AI related patent throughout years in our [notebook](LINK REQUIRED).
+The following bar chart displays the overall AI for different years 2(Figure 2.3.7). There is also an interactive visualization that displays the number of AI related patent throughout years in our [notebook](https://github.com/oussama6703/ada/blob/master/project/Milestone-3.ipynb).
 
 <a id='number_ai_by_countries'></a>
 ![Image](img/number_ai_by_countries.png)
