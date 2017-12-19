@@ -57,11 +57,11 @@ After companies, we moved into analysis according to countries. We acquired coun
 
 We also wanted to visualize these findings in a choropleth world map to highlight dispersion granted patents across the countries. In PatensView dataset, country names are coded according to the Alpha-2 ISO norm and to be able to draw the map, it is required a .geojson file that maps these country codes into actual locations. For this purposes, we used take [this](LINK REQUIRED) .geojson file and customized for our purposes.
 
-As it can be seen from [Figure 3](#last_year_patents_by_country), there is a very large gap between countries in terms of number of patents and to be able to have a more descriptive choropleth map, we opted for a logarithmic scale. The resulting map can be seen in the following screenshot and we served the interactive visualization of this map in [here](html/patents_by_country.html).
+As it can be seen from [Figure 3](#last_year_patents_by_country), there is a very large gap between countries in terms of number of patents and to be able to have a more descriptive choropleth map, we opted for a logarithmic scale. The resulting map can be seen in the following map and we served the interactive visualization of this map in [here](html/patents_by_country.html).
 
 <a id="patents_by_country"></a>
 ![Image](img/patents_by_country.png)
-*Screenshot 1: The map of Number of Granted Patents in the Last Year*
+*Map 1: Map of Granted Patents in 2016*
 
 
 ## 1.4. Analysis of Patents belonging to Countries by CPC Categories
@@ -116,6 +116,10 @@ With that, we conclude the first part of the project and move into more advanced
 Financial Technology (or FinTech) [11](https://hesso.tind.io/record/1996/files/Schueffel_Tamingthebeast_2016.pdf) is a ‘new’ financial industry that applies technology to improve financial activities . Among the several applications of FinTech we can cite a few such as new automated financial advisors, P2P lending platforms, new contactless payment technologies such (NFC, Twint, Apple Pay, etc.), blockchain application and development of cryptocurrencies (e.g. bitcoin, ethereum, etc.) personal finance applications that aim to help individuals and businesses develop a budget, and many more. 
 
 According to Google Trends, the word “FinTech” is searched 201’000 times each month on average, and this number is growing very fast in the future. Below is  a graph showing the interest over the last 6 years for FinTech.  A value of 100 is the peak popularity for the term. A value of 50 means that the term is half as popular.
+
+<a id='patents_by_categories_spider'></a>
+![Image](img/patents_by_categories_spider.png)
+*Figure 7: Number of Granted Patents in the Last Year according to CPC Categories with Spider Charts*
 
 
 ## 2.3. Artificial Intelligence Patents Analysis 
@@ -266,11 +270,11 @@ We though that the best way to indicate the overall AI related patents that each
 
 From this map, it is clear that number of AI related patents has increase signiﬁcantly over years. We also, observe that United States and Japan takes the lead again and most of these countries are the ones known for their technological advancement. It is worth mentioning that although Isreal (IL) couldn't make it to the top in terms of [total number of patents](#last_year_patents_by_country), it is 5th country in AI related patents ranking. This situation is exceedingly interesting since Isreal is one of the most impactful countries in the Middle-east and AI researches might have an effect on that. We examine this idea more in the following section.
 
-Similar to [the map we draw](#patents_by_country) in the first part of the project, we wanted draw a choropleth map to be able to see the distribution of AI related patents around the world. As before, we used logarithmic scale to assign colors to the countries. Resulting map can be seen in the following screenshot and we served the interactive visualization of this map in [here](html/ai_patents_by_country.html).
+Similar to [the map we draw](#patents_by_country) in the first part of the project, we wanted draw a choropleth map to be able to see the distribution of AI related patents around the world. As before, we used logarithmic scale to assign colors to the countries. Resulting map can be seen in the following picture and we served the interactive visualization of this map in [here](html/ai_patents_by_country.html).
 
 <a id="ai_patents_by_country"></a>
 ![Image](img/ai_patents_by_country.png)
-*Screenshot 1: The Choropleth Map according to Number of AI Related Patents*
+*Map 1: The Choropleth Map according to Number of AI Related Patents*
 
 Last question we wanted to answer is related to a recent statement made by *Putin* which is “the nation that leads in artificial intelligence will be the ruler of the world”[1].
 
