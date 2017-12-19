@@ -303,7 +303,7 @@ Different companies are leaders for different sectors:
 **Carbon Capture**: this sector is dominated by Samsung. We can note that they provided most of the patents in the past 2 years (2015/2016). Therefore we can conclude that they are inversting a lot in that technology and are expected to grow even more in that sector. The same conclusion can be drawn for the japanese company Toshiba who started to invest in Carbon Capture in 2014.
 
 
-## 2.2. FinTech Patents Analysis
+# 2.2. FinTech Patents Analysis
 
 Financial Technology (or FinTech) [10] is a ‘new’ financial industry that applies technology to improve financial activities . Among the several applications of FinTech we can cite a few such as new automated financial advisors, P2P lending platforms, new contactless payment technologies such (NFC, Twint, Apple Pay, etc.), blockchain application and development of cryptocurrencies (e.g. bitcoin, ethereum, etc.) personal finance applications that aim to help individuals and businesses develop a budget, and many more.
 
