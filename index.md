@@ -305,7 +305,7 @@ Different companies are leaders for different sectors:
 
 # 2.2. FinTech Patents Analysis
 
-Financial Technology (or FinTech) [10] is a ‘new’ financial industry that applies technology to improve financial activities . Among the several applications of FinTech we can cite a few such as new automated financial advisors, P2P lending platforms, new contactless payment technologies such (NFC, Twint, Apple Pay, etc.), blockchain application and development of cryptocurrencies (e.g. bitcoin, ethereum, etc.) personal finance applications that aim to help individuals and businesses develop a budget, and many more.
+Financial Technology (or FinTech) [8] is a ‘new’ financial industry that applies technology to improve financial activities . Among the several applications of FinTech we can cite a few such as new automated financial advisors, P2P lending platforms, new contactless payment technologies such (NFC, Twint, Apple Pay, etc.), blockchain application and development of cryptocurrencies (e.g. bitcoin, ethereum, etc.) personal finance applications that aim to help individuals and businesses develop a budget, and many more.
 
 According to Google Trends, the word “FinTech” is searched 201’000 times each month on average, and this number is growing very fast in the future. Below is  a graph showing the interest over the last 6 years for FinTech.  A value of 100 is the peak popularity for the term. A value of 50 means that the term is half as popular.
 
@@ -347,9 +347,9 @@ Let us now talk a little bit more about who issues the most FinTech patents amon
 ![Image](img/fintech_companies.png)
                         *Figure 33: TOP 15 companies issuers of FinTech patents*
 
-Trading Technologies International Inc. [11] is a Chicago based company that develops and delivers professional trading software platforms for trading around the world. It takes the lead of FinTech patents by issuing about 350 patents so far. Among the known companies, American Express ranks 3rd, eBay 5th, IBM 6th and VISA 11th.
+Trading Technologies International Inc. [9] is a Chicago based company that develops and delivers professional trading software platforms for trading around the world. It takes the lead of FinTech patents by issuing about 350 patents so far. Among the known companies, American Express ranks 3rd, eBay 5th, IBM 6th and VISA 11th.
 
-We now focus on the blockchain technology. According to ‘the Economist’, blockchain is defined as a continuously growing list of records, called blocks, which are linked and secured using cryptography. Blockchain is used in a strong P2P network t0 anonymize and secure the transaction of cryptocurrencies around the globe. We scrapped the website of Clarivate Analytics [12], which is an independent company that owns and operates a collection of patents, seeking the first world issuers of blockchain patents. We came up with the following firms:
+We now focus on the blockchain technology. According to ‘the Economist’, blockchain is defined as a continuously growing list of records, called blocks, which are linked and secured using cryptography. Blockchain is used in a strong P2P network t0 anonymize and secure the transaction of cryptocurrencies around the globe. We scrapped the website of Clarivate Analytics [10], which is an independent company that owns and operates a collection of patents, seeking the first world issuers of blockchain patents. We came up with the following firms:
 
 <a id='blockchain_firms_quote'></a>
 ![Image](img/blockchain_firms_quote.png)
@@ -557,11 +557,11 @@ As a result, we can actually confirm that who are making more revenue from their
 
 [7] Wikipedia. (2017, December 19). *Dharmendra Modha*. [https://en.wikipedia.org/wiki/Dharmendra_Modha](https://en.wikipedia.org/wiki/Dharmendra_Modha)
 
-[10] Taming the Beast: A Scientific Definition of Fintech, *Patrick Schueffel*
+[8] Taming the Beast: A Scientific Definition of Fintech, *Patrick Schueffel*
 [https://hesso.tind.io/record/1996/files/Schueffel_Tamingthebeast_2016.pdf](https://hesso.tind.io/record/1996/files/Schueffel_Tamingthebeast_2016.pdf)
 
-[11] Trading technologies International Inc., *Bloomberg*
+[9] Trading technologies International Inc., *Bloomberg*
 [https://www.bloomberg.com/research/stocks/private/snapshot.asp?privcapId=2907578](https://www.bloomberg.com/research/stocks/private/snapshot.asp?privcapId=2907578)
 
-[12] An Overview of the Blockchain Patent Landscape, *Clarivate Analytics*
+[10] An Overview of the Blockchain Patent Landscape, *Clarivate Analytics*
 [https://clarivate.com/blog/overview-blockchain-patent-landscape/](https://clarivate.com/blog/overview-blockchain-patent-landscape/)
