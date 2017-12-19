@@ -214,7 +214,7 @@ The bar plot aborve highlights the fact that solar energy is a trend nowadays. C
 A study of the relation between the growth in the different sector can be studied. For exemple, it can shown that when the hydro sector grows, the wind sector will grow as well. A correlation matrix can be computed to highlight these relation. The more the correlation is close to one, the more both sector are growing together.
 
 <a id='correl_matrix_energy'></a>
-![Image](img/correl_matrix_energy.PNG)
+![Image](img/correl_matrix_energy.png)
 
 *Figure 17: correlation matrix between the different technologies*
 
@@ -225,7 +225,7 @@ FIt can be observed that the technology in solar termic and photovoltaic evolve 
 For this next study, only the patents between 2010 and 2016 will be. It takes less compilation time and shows a sufficient ammount of date for companies and countries.
 
 <a id='word_map_renewable'></a>
-![Image](img/word_map_renewable.PNG)
+![Image](img/word_map_renewable.png)
 
 *Figure 18: patents application in renewable energy around the world*
 
