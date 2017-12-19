@@ -1,1 +1,8 @@
 theme: jekyll-theme-cayman
+defaults:
+  -
+    scope:
+      type: "posts"
+    values:
+      layout: "post"
+      title: "
