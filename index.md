@@ -8,7 +8,7 @@ The purpose of our project is to extract valuable insights about research trends
 
 The dataset that we used in this study is acquired from [PatentsView](http://www.patentsview.org). PatentsView provides an highly convenient API that allowed us to search for patents according to many different criteria such as to a patent title, inventor or locations. For instance, it is possible to look for how many patents in a specific topic were delivered by IBM in California from 2012 and 2015.
 
-In addition to PatentsView dataset, we used various other resources to get certain required informations for the second part of our analysis such [defence industry rankings](http://people.defensenews.com/top-100/) from Defense News  and the [list of top technology companies](http://fortune.com/2015/06/13/fortune-500-tech/). from Fortune.
+In addition to PatentsView dataset, we used various other resources to get certain required informations for the second part of our analysis such [defence industry rankings](http://people.defensenews.com/top-100/)[2] from Defense News  and the [list of top technology companies](http://fortune.com/2015/06/13/fortune-500-tech/)[3] from Fortune.
 
 # Tools and Libraries
 
@@ -115,7 +115,7 @@ With that, we conclude the first part of the project and move into more advanced
 
 In this section of the project, we tried to anaylze patents related to Artificila Intelligence (AI) in a  comprehensive manner. We structered the section in the form of question and answer so, for each research question we tried to answer there is a sub-section. Before answering any questions, we gathered all the patents related to AI from 1976 until 2017 along with informations about their inventors, citations, companies and belonging countries.
 
-The method we followed to acquire AI patents is two fold. First, we only consider IPC category "G06" which corresponds to "Computing; Calculating; Counting". According to our researches this is the main category where AI patents fall under. In addition to AI patents, this category contains many others and therefore, we only considered patent that has one of the AI related keywords in their titles. These keywords are gathered from different sources[1](https://phrasee.co/ultimate-glossary-artificial-intelligence-terms/) [2](https://business.twitter.com/en/blog/artificial-intelligence-terms-marketers-need-to-know.html) and can be accessed from [here](data/ai_keywords.txt). We consider a patent related to AI if its description contains one of these keywords. And more information related to IPC categories can be found [here](http://www.wipo.int/classifications/ipc/en/).
+The method we followed to acquire AI patents is two fold. First, we only consider IPC category "G06" which corresponds to "Computing; Calculating; Counting". According to our researches this is the main category where AI patents fall under. In addition to AI patents, this category contains many others and therefore, we only considered patent that has one of the AI related keywords in their titles. These keywords are gathered from different sources[4](https://phrasee.co/ultimate-glossary-artificial-intelligence-terms/) [5](https://business.twitter.com/en/blog/artificial-intelligence-terms-marketers-need-to-know.html) and can be accessed from [here](data/ai_keywords.txt). We consider a patent related to AI if its description contains one of these keywords. And more information related to IPC categories can be found [here](http://www.wipo.int/classifications/ipc/en/).
 
 As we mentioned earlier, PatensView allows requesting patents only up to 100'000 at a time, to be able to gather all AI patents, we needed to request them in monthly chunks for each year. It is also worth mentioning that, it is required to clean the dataset since it was a bit messy in its raw form. Structure of the resulting dataset can be seen Table 2.1.
 
@@ -188,9 +188,9 @@ Since we already have the required data, we just calculated number of patents th
 
 There is not much to interpret about this table (since we are already analyzing related companies and countries in other parts of the study). However, here is some information about top AI patent holders which confirms that we are on the right track.
 
-**[Philip Yu](https://en.wikipedia.org/wiki/Philip_S._Yu)** is an American computer scientist and Professor in Information Technology at the University of Illinois at Chicago, known for his work in the field of data mining.
+**[Philip Yu](https://en.wikipedia.org/wiki/Philip_S._Yu)** is an American computer scientist and Professor in Information Technology at the University of Illinois at Chicago, known for his work in the field of data mining[6].
 
-**[Dharmendra Modha](https://en.wikipedia.org/wiki/Dharmendra_Modha3)** is an Indian American manager and lead researcher of the Cognitive Computing group at IBM Almaden Research Center. He is known for his pioneering works in Artificial Intelligence and Mind Simulation.
+**[Dharmendra Modha](https://en.wikipedia.org/wiki/Dharmendra_Modha)** is an Indian American manager and lead researcher of the Cognitive Computing group at IBM Almaden Research Center. He is known for his pioneering works in Artificial Intelligence and Mind Simulation[7].
 
 Now, we move into company-wise analysis of AI related patents.
 
@@ -218,7 +218,7 @@ One important point to note is that for some companies, it is the case that they
 
 This figure reveals the rankings of companies based on how much of their patents are related to AI and this intuitively means that how much of their resources devoted to AI researches.
 
-Now, we wanted to see whether or not investing AI research would end up increasing the rank of a company. For this purpose we decided to match companies we found (by the number of AI patents) with the companies in [Fortune 500](http://fortune.com/2015/06/13/fortune-500-tech/) list. Note that within that list, we only take companies related to computer software and information systems into account since it is highly probable that only these companies made considerable amount of researches related to AI. The results are demonstrated in Figure 2.6.
+Now, we wanted to see whether or not investing AI research would end up increasing the rank of a company. For this purpose we decided to match companies we found (by the number of AI patents) with the companies in [Fortune 500 list](http://fortune.com/2015/06/13/fortune-500-tech/)[3]. Note that within that list, we only take companies related to computer software and information systems into account since it is highly probable that only these companies made considerable amount of researches related to AI. The results are demonstrated in Figure 2.6.
 
 <a id='percentage_ai_vs_fortune'></a>
 ![Image](img/percentage_ai_vs_fortune.png)
@@ -265,11 +265,11 @@ Similar to [the map we draw](#patents_by_country) in the first part of the proje
 ![Image](img/ai_patents_by_country.png)
 *Screenshot 1: The Choropleth Map according to Number of AI Related Patents*
 
-Last question we wanted to answer is related to a recent statement made by *Putin* which is “the nation that leads in artificial intelligence will be the ruler of the world”.
+Last question we wanted to answer is related to a recent statement made by *Putin* which is “the nation that leads in artificial intelligence will be the ruler of the world”[1].
 
 ## 2.1.7. What is the relationship between number of artificial intelligence related patents that countries have and the rank of their defence industries?
 
-To be able to answer this question we needed a reliable ranking for countries' defense industries. We though that using [Global Defense Companies 100](http://people.defensenews.com/top-100/) list (from Defense News), to extract the revenues of defense companies along with belonging countries then, grouping these companies by countries and summing up their revenues would give us a reasonable estimation for defense industry rankings of countries. The ranking (top 10) we calculated can be seen in Table 2.4.
+To be able to answer this question we needed a reliable ranking for countries' defense industries. We though that using [Global Defense Companies 100 list](http://people.defensenews.com/top-100/)[2] (from Defense News), to extract the revenues of defense companies along with belonging countries then, grouping these companies by countries and summing up their revenues would give us a reasonable estimation for defense industry rankings of countries. The ranking (top 10) we calculated can be seen in Table 2.4.
 
 | **Country** | **Revenue (in Milions)** |
 |------|------|
@@ -307,3 +307,13 @@ As a result, we can actually confirm that countries which are making more revenu
 | . | . |
 | . | . |
 | RU | 6 |
+
+# References
+
+[1] Vincent, J. (2017, September 4). *The Nation that Leads in AI Will be the Ruler of the World*. Retrieved from https://www.theverge.com/2017/9/4/16251226/russia-ai-putin-rule-the-world.
+[2] (2017, December 19). *Top 100 for 2017*. Retrieved from http://people.defensenews.com/top-100/
+[3] Griffith, E. (2016, June 7). *The Top Technology Companies of the Fortune 500*. Retrieved from http://fortune.com/2016/06/07/fortune-500-technology-companies/
+[4] (2017, December 19). *Ultimate Glossary of Artificial Intelligence Terms* https://phrasee.co/ultimate-glossary-artificial-intelligence-terms/
+[5] Kniahynyckyj, R. (2017, August 15). *Artificial Intelligence: Terms marketers need to know*. Retrieved from https://business.twitter.com/en/blog/artificial-intelligence-terms-marketers-need-to-know.html
+[6] (2017, December 19). *Philip S. Yu*. Retrieved from https://en.wikipedia.org/wiki/Philip_S._Yu
+[7] (2017, December 19). *Dharmendra Modha*. Retrieved from https://en.wikipedia.org/wiki/Dharmendra_Modha
