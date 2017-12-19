@@ -135,43 +135,43 @@ First, using patentsview API, queries are send in the database to obtain the num
 
 <a id='patents_solar_thermal'></a>
 ![Image](img/patents_solar_thermal.png)
-                        *Figure 7: Evolution of solar thermic technology*
+                        *Figure 8: Evolution of solar thermic technology*
 
 Even if the photovoltaic technology is more important than the solar thermic technology in term of number of patents, both sectors had a huge increase, espessially in the past 4 years
 
 <a id='patents_wind'></a>
 ![Image](img/patents_wind.png)
-                        *Figure 7: Evolution of wind technology*
+                        *Figure 9: Evolution of wind technology*
 
 Wind energy has more patents than solar energy in 2007/2008. However if we sum up both solar technologies, in 2016 wind and solar energy have a similar number of patents.                    
 
 <a id='patents_hydro'></a>
 ![Image](img/patents_hydro.png)
-                        *Figure 7: Evolution of hydropower technology*
+                        *Figure 10: Evolution of hydropower technology*
 
 Hydro does not have a large number of patent. Howerver, we could expect that this technology is outdated since dams were built many years ago (at least in Switzerland). In fact, as the other energy sectors and the number of patent in general, hydroelectric technology also evolved fast in the past.
 
 <a id='patents_wave_and_tidal'></a>
 ![Image](img/patents_wave_and_tidal.png)
-                        *Figure 7: Evolution of wave and tidal technology*
+                        *Figure 11: Evolution of wave and tidal technology*
 
 As we can observe, wave and tidal turbines were irrelevant in 2007. In the next years this technology became more important and the number of patent became hundred times greater in 10 years.
 
 <a id='patents_carbon_capture'></a>
 ![Image](img/patents_carbon_capture.png)
-                        *Figure 7: Evolution of carbon capture technology*
+                        *Figure 12: Evolution of carbon capture technology*
 
 Carbon capture almost didn't exist in 2007 but increased greatly in the past years although the number of patents is very volatile
 
 <a id='patents_coal_and_gas'></a>
 ![Image](img/patents_coal_and_gas.png)
-                        *Figure 7: Evolution of coal and gas technology*
+                        *Figure 13: Evolution of coal and gas technology*
 
 As the other sector, fossil energy had an increase in research from 2013 to 2015. However, it decreases in 2016. We can expect the trend to contimue in that direction.
 
 <a id='patents_nuclear'></a>
 ![Image](img/patents_nuclear.png)
-                        *Figure 7: Evolution of nuclear technology*
+                        *Figure 14: Evolution of nuclear technology*
 
 The number of patents for nuclear energy also blew up in from 2013 to 2016. Even the nuclear catastrophe that occured in the pas didn't change the number of patent application in that area.                       
 
@@ -179,7 +179,7 @@ The number of patents for nuclear energy also blew up in from 2013 to 2016. Even
 
 <a id='patents_renewable_vs_coal_and_gas'></a>
 ![Image](img/patents_renewable_vs_coal_and_gas.png)
-                        *Figure 7: Renewable vs coal and gas technologies*
+                        *Figure 15: Renewable vs coal and gas technologies*
 
 The plot above shows clearly that there was the same number of patent between fossil energy and renewable around 2007 and 2009. After 2009 it can be note that the patent applications for renewable energy evolved much faster. In 2016, the number of patent in coal and gas decreased, we can then expect that the difference between both categories will increase even faster in the future.
 
@@ -195,7 +195,7 @@ Below, the plot showing the average growth in patent application is displayed. T
 
 <a id='avg_growths_energy'></a>
 ![Image](img/avg_growths_energy.png)
-                        *Figure 7: Average growth for the different technologies*
+                        *Figure 16: Average growth for the different technologies*
 
 The bar plot aborve highlights the fact that solar energy is a trend nowadays. Carbon capture is a very new technology that is espected to evolve very fast in the future. However, as we can see in the table containing the number of patent, this sector do not contain many patents and the standard deviation is large. Therefore the future of this technology is uncertain. By looking at the 3 average growth on the right, it can be observed that renewable energy has evolved more in the past than fossil energy. Despite the nuclear catastrophe in Fukushima, the number of patents in that sector still exploded and evolved faster espessially in the past few years. However, the number of patents in renewable and fossil energy is much larger. It is also important to note that the patents in nuclear energy might also include the research in making the technology safer.
 
@@ -205,7 +205,7 @@ A study of the relation between the growth in the different sector can be studie
 
 <a id='correl_matrix_energy'></a>
 ![Image](img/correl_matrix_energy.PNG)
-                        *Figure 7: correlation matrix between the different technologies*
+                        *Figure 17: correlation matrix between the different technologies*
 
 FIt can be observed that the technology in solar termic and photovoltaic evolve together. Wind and Hydro technologies seems to be highly correlated. We could suppose that those technology are complementary and that governements encorage investments in both technologies at the same time. Tidal and wave as well as carbon capture are not correlated to any other energy secors. It can be explained that those technologies are new compare to the others. It is interesting to note that carbon and gas technologies have high correlation with nuclear energy. If some countries are not focus on green energy, the investment in these 2 sectors will be fostered. With a correlation of 0.97 between the wind energy and renewable energy in general, it can be deducted that wind energy represent the general trend in green energy.
 
@@ -215,10 +215,75 @@ For this next study, only the patents between 2010 and 2016 will be. It takes le
 
 <a id='word_map_renewable'></a>
 ![Image](img/word_map_renewable.PNG)
-                        *Figure 7: patents application in renewable energy around the world*
+                        *Figure 18: patents application in renewable energy around the world*
 
 This map shows the number of USPTO patents application around the world
 
+<a id='companies_solar'></a>
+![Image](img/companies_solar.png)
+                        *Figure 19: solar energy by countries*
+                        
+ <a id='countries_wind_hydro'></a>
+![Image](img/countries_wind_hydro.png)
+                        *Figure 20: wind energy and hydro energy by countries*
+                        
+ <a id='countries_tidal_and_wave_carbon'></a>
+![Image](img/countries_tidal_and_wave_carbon.png)
+                        *Figure 21: solar energy by countries*
+
+Every technologies are dominated by the US, especially for solar thermic, hydro, tidal and wave. This is not surprising since USPTO is a US company.
+
+Solar Photovoltaic: Japan, Korea and Taiwan follows the US in the ranking, we can note that their investment in this sector highly increased in the past 3 years. Germany, France and China arrive after in the ranking
+
+Solar Themic: US and Japan are the first for this technolog. However, Germany and Spain are 3rd and 4th with a big investment in that sector in 2015.
+
+Wind: Germany outperforms Japan in that sector and take the second rank. We can also note the big effort of Denmark in that area which take the 4th rank. The politic of developping wind energy in those 2 countries explains this good performance
+
+Hydro is highly dominated by the US followed by Japan and Germany. Canada is ranked 4th with 62% of its energy produce by hydroelectricity.
+
+Tidal and Wave: Highliy dominated by the US. The UK becomes second with a high investment in 2014. We can notice that European countries like France, Spain, Italy, Norway and Finland are also investing in this technology, especially the past few years.
+
+Carbon Capture: Japan and Korea are at the forefront of the research for this technology after the US and invested a lot during 2016 which is auspicious for the future.
+
+Renewable energy in gerneral: The ranking follows the general trend of all the specific renewable energy with the US fist, followed by Japan, Germany, Korea and Denmark. We can note that China which is a big country is only 9th and Russie do not even appear in the top 10.
+
+<a id='companies_solar_photo'></a>
+![Image](img/companies_solar_photo.png)
+                        *Figure 22: solar photovoltaic energy by companies*
+                        
+<a id='companies_solar_thermal'></a>
+![Image](img/companies_solar_thermal.png)
+                        *Figure 23: solar thermic energy by companies*
+
+<a id='companies_wind'></a>
+![Image](img/companies_wind.png)
+                        *Figure 24: wind by companies*
+                        
+<a id='companies_hydro'></a>
+![Image](img/companies_hydro.png)
+                        *Figure 25: hydro by companies*
+
+<a id='companies_tidal_and_wave'></a>
+![Image](img/companies_tidal_and_wave.png)
+                        *Figure 26: tidal and wave by companies*
+                        
+<a id='companies_carbon_capture'></a>
+![Image](img/companies_carbon_capture.png)
+                        *Figure 27: carbon capture by companies*
+
+Different companies are leaders for different sectors:
+
+Solar Photovolataic: SunPower Corporation is first, it is a solar panel supplier based in San Jose, CA and is a subsidiary from Total. This company is known for their highly performant solar panel. Then comes the multinational US company IBM and the Japanese company Sharp.
+
+Solar Thermic: SunPower Corporation is also first for the thermic solar panel followed closely by Abengoa which is a spanish company. It confirms that Spain arrives 4th in the ranking for solar termic panels.
+
+Wind: The multinational US company GE activ in many energy sector is the first patent company for wind. Vestas which is a danish company is 3nd. The latter is only active in wind energy and is highly responsible for the good ranking for Denmark in that area.
+
+Hydro: Caterpilar dominate the market in terms of Hydro patents. Even if their main area is construction machine, they also profide equipments for hydropower plants.
+
+Tidal and Wave: The market is shared by many companies in that sector and we can note that none of them are multinational but specialisez in that sector. Many of them started their invesments in 2015/2016. Therefore we can conclude that this area has a big potential. The first company (Ocean Power technology) is from the US, the second (Voith) is from Germany and the third is the National Taiwan University.
+
+Carbon Capture is dominated by Samsung. We can note that they provided most of the patents in the past 2 years (2015/2016). Therefore we can conclude that they are inversting a lot in that technology and are expected to grow even more in that sector. The same conclusion can be drawn for the japanese company Toshiba who started to invest in Carbon Capture in 2014.
 
 
 ## 2.2. FinTech Patents Analysis
@@ -229,20 +294,20 @@ According to Google Trends, the word “FinTech” is searched 201’000 times e
 
 <a id='google_trends'></a>
 ![Image](img/google_trends.png)
-                        *Figure 7: Popularity of the search term “FinTech” on Google*
+                        *Figure 28: Popularity of the search term “FinTech” on Google*
 
 From our PatentsView database,  we queried the FinTech patents of the last 10 years by IPC (International Patent Classification), which is a hierarchical patent classification system. To make our research more specific, we created a set of keywords related to FinTech (financial technology, distributed ledger, cryptocurrency, trading, etc.), and filtered the outcome the IPC results accordingly.
 Here is a preview of our filtered query:
 
 <a id='ipc_head'></a>
 ![Image](img/ipc_head.png)
-                        *Figure 8: Overview on the search by IPC*
+                        *Figure 29: Overview on the search by IPC*
 
 An interesting idea would be to count the patents by year to visualize the evolution of the FinTech patents to get a clear insight into their growth over the past decade.
 
 <a id='evolution_fintech'></a>
 ![Image](img/evolution_fintech.png)
-                      *Figure 9: Evolution of the FinTech related patents*
+                      *Figure 30: Evolution of the FinTech related patents*
 
 This phenomenal growth indeed explains the Google growth of popularity. The FinTech domain have seen its patents grow from late 2005 all the way up to 2013 to reach a peak of 709 patents. Notice here that the number of patents almost doubled between 2009 and 2010 right after the introduction of Bitcoin, which was the start of a patent technology race for the cryptocurrency companies. We will talk about this a little further.
 
@@ -250,20 +315,20 @@ It is important to locate where is all this growth concentrated, therefore we to
 
 <a id='world_fintech'></a>
 ![Image](img/world_fintech.png)
-                        *Map 2: Dsitribution of FinTech Related Patents around the world*
+                        *Figure 31: Dsitribution of FinTech Related Patents around the world*
 
 
 Funny story here is that ‘Robert A. West’ holds the most patents in FinTech, what are the odds! After some googling it turned out that he was not our professor at all. As a matter of fact, Robert A. West is a intellectual property (IP) specialist who devoted his life to the creative process, and filing a large number of patents, 67 of which are FinTech related.
 
 <a id='fintech_people'></a>
 ![Image](img/fintech_people.png)
-                        *Figure 9: TOP 10 people issuers of FinTech patents*
+                        *Figure 32: TOP 10 people issuers of FinTech patents*
 
 Let us now talk a little bit more about who issues the most FinTech patents among the firms worldwide.
 
 <a id='fintech_companies'></a>
 ![Image](img/fintech_companies.png)
-                        *Figure 10: TOP 15 companies issuers of FinTech patents*
+                        *Figure 33: TOP 15 companies issuers of FinTech patents*
 
 Trading Technologies International Inc. [11] is a Chicago based company that develops and delivers professional trading software platforms for trading around the world. It takes the lead of FinTech patents by issuing about 350 patents so far. Among the known companies, American Express ranks 3rd, eBay 5th, IBM 6th and VISA 11th.
 
@@ -271,7 +336,7 @@ We now focus on the blockchain technology. According to ‘the Economist’, blo
 
 <a id='blockchain_firms_quote'></a>
 ![Image](img/blockchain_firms_quote.png)
-    *Figure 11: Leader firms in Blockchain related patents*
+    *Figure 34: Leader firms in Blockchain related patents*
 
 
 
@@ -327,13 +392,13 @@ To answer this question, we calculated number of AI related patents for each yea
 
 <a id='number_ai_patents_by_year'></a>
 ![Image](img/number_ai_patents_by_year.png)
-*Figure 2.3.1: Number of Artificial Intelligence Related Patents in Years*
+*Figure 35: Number of Artificial Intelligence Related Patents in Years*
 
 From this figure, it seems that there are two periods of time where number of AI patents raised that are around 1986 and 2006. Other than these periods, the amount of AI related patent seems pretty steady. But considering that overall number of patents has also increased over years, to be able to see the whole picture and make a more complete analysis, we also need to check the percentage of AI patents among all patents through years (Figure 2.3.2).
 
 <a id='percentage_ai_patents_by_year'></a>
 ![Image](img/percentage_ai_patents_by_year.png)
-*Figure 2.3.2: Percentage of Artificial Intelligence Related Patents in Years*
+*Figure 36: Percentage of Artificial Intelligence Related Patents in Years*
 
 There are couple of observations worth mentioning about these figures. **First** of all, above graph starts with a decline from 1976. We already know that AI was popular field of research at 1960s (e.g. Artificial Neural Networks invented in this period.) and its popularity started to decline around 1970s (because of insufficient computing power and datasets). Although, we don't have information of patents in 1960s, we can see that the graph starts with a steady line in 1976 then, rapidly declines in 1977. It continues to fall for 3 years until it hits the lowest value in 1980.
 The rate in 1977 is only reached again in 1989 which is 12 years lates.  So, the graph confirms our knowledge about the popularity of AI researches in 1960s. With this information, we believe that it is safe to assume, percentage of AI patents is an indication of popularity in AI researches. **Another** interesting point is that percentage of AI patents dramatically increases from 1987 to 1994 then, stays steady about 3 years until it starts to decline again for 5 years, until 2002. The rate of AI patents in 1996 is only reached after 10 years later, around 2006. We can see that this trend is pretty similar to 1960s', it starts with a rapid increase, followed by a steady period then, a decrease for couple of years and in both situation, around 10 years had to past before the rate came back to where it was. In light of this information, we can try to analyze the **current situation**. We see that there is a dramatic increase on patent rates from 2002 to 2012 then, it stays about the same with minor fluctuations. The characteristic that increasing rapidly and entering into steady phase is pretty similar to what we observed in last decades however it seems that the steady phase are not followed by a decline since the rate starts to increase again in 2016. Although this might be an indication that popularity of AI related researches won't decline this time, it is still too early to infer that. The first two phases were similar to what has been observed in the past decades but it requires time (at least couple more years) to decide whether this time will characteristic of the trend will be different or not.
@@ -348,7 +413,7 @@ Since we already have the required data, we just calculated number of patents th
 
 <a id='prolific_inventors'></a>
 ![Image](img/prolific_inventors.png)
-*Figure 2.3.3: List of Prolific Inventors in the Field of Artificial Intelligence*
+*Figure 37: List of Prolific Inventors in the Field of Artificial Intelligence*
 
 There is not much to interpret about this table (since we are already analyzing related companies and countries in other parts of the study). However, here is some information about top AI patent holders which confirms that we are on the right track.
 
@@ -364,7 +429,7 @@ To answer this question, we grouped the dataset according to companies and sorte
 
 <a id='number_of_ai_patents_by_company'></a>
 ![Image](img/number_of_ai_patents_by_company.png)
-*Figure 2.3.4: Companies Holding the most Artificial Intelligence Related Patens*
+*Figure 38: Companies Holding the most Artificial Intelligence Related Patens*
 
 As expected, IBM who has the highest number of patents in all categories has also the most AI related patens. Microsoft and Google takes the second and third places which are two of the biggest technology companies that are also known for their interest in AI researches.
 
@@ -378,7 +443,7 @@ One important point to note is that for some companies, it is the case that they
 
 <a id='percentage_ai_patents_by_companies'></a>
 ![Image](img/percentage_ai_patents_by_companies.png)
-*Figure 2.3.5: Ratio of Artificial Intelligence Related Patents among All Others by Companies*
+*Figure 39: Ratio of Artificial Intelligence Related Patents among All Others by Companies*
 
 This figure reveals the rankings of companies based on how much of their patents are related to AI and this intuitively means that how much of their resources devoted to AI researches.
 
@@ -386,7 +451,7 @@ Now, we wanted to see whether or not investing AI research would end up increasi
 
 <a id='percentage_ai_vs_fortune'></a>
 ![Image](img/percentage_ai_vs_fortune.png)
-*Figure 2.3.6: Top Companies Invested in AI Researches and Their Presence in Fortune 500 List*
+*Figure 40: Top Companies Invested in AI Researches and Their Presence in Fortune 500 List*
 
 From this figure we can see that companies that invested in AI research more (which derived from proportion of AI patents they have) is more likely be in the Fortune 500 list. As the AI research proportion decrease chance of a company being among the top companies also, decreases. We can see that there is only one company in the Fortune list with less than 0.2 AI patent ratio which corresponds to rank 50 in our list (as seen in the figure). This means, all the technology companies (except one) in Fortune 500 list are from top 50 in the ranking we calculated by AI patent ratio.
 
@@ -419,7 +484,7 @@ We though that the best way to indicate the overall AI related patents that each
 
 <a id='number_ai_by_countries'></a>
 ![Image](img/number_ai_by_countries.png)
-*Figure 2.3.7: Countries that Has the Highest number of Artificial Intelligence Related Patens in Years*
+*Figure 41: Countries that Has the Highest number of Artificial Intelligence Related Patens in Years*
 
 From this map, it is clear that number of AI related patents has increase signiﬁcantly over years. We also, observe that United States and Japan takes the lead again and most of these countries are the ones known for their technological advancement. It is worth mentioning that although Isreal (IL) couldn't make it to the top in terms of [total number of patents](#last_year_patents_by_country), it is 5th country in AI related patents ranking. This situation is exceedingly interesting since Isreal is one of the most impactful countries in the Middle-east and AI researches might have an effect on that. We examine this idea more in the following section.
 
@@ -427,7 +492,7 @@ Similar to [the map we draw](#patents_by_country) in the first part of the proje
 
 <a id="ai_patents_by_country"></a>
 ![Image](img/ai_patents_by_country.png)
-*Map 2.3.1: Dsitribution of AI Related Patents around the world*
+*Figure 42: Dsitribution of AI Related Patents around the world*
 
 Last question we wanted to answer is related to a recent statement made by *Putin* which is “the nation that leads in artificial intelligence will be the ruler of the world”[1].
 
@@ -457,7 +522,7 @@ One other point to mention about our choice of implementation is that unlike com
 
 <a id='percentage_ai_vs_defence'></a>
 ![Image](img/percentage_ai_vs_defence.png)
-*Figure 2.3.8: Countries that have Highest number of AI Related Patents and Their Presence in Top Defence Industries List*
+*Figure 43: Countries that have Highest number of AI Related Patents and Their Presence in Top Defence Industries List*
 
 Again, it is obvious that countries that have more AI related patents are much more likely to be in top defence industries list. 16 out of 47 countries (in our list based on AI related patents) were also made it to the top defence industries list. Moreover, the figure reveals that 13 of these 16 countries has more than 10 patents in AI. It can also be seen that 15 out of top 20 countries in our list (based on AI related patents) were present in top defence industries list. It can also be seen from the figure, the frequency of red dots (countries in top defence industries list) increasing as the number of the AI related patents increase.
 
