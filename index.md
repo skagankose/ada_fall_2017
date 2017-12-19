@@ -119,20 +119,20 @@ According to Google Trends, the word “FinTech” is searched 201’000 times e
 
 <a id='google_trends'></a>
 ![Image](img/google_trends.png)
-*Figure 7: Popularity of the search term “FinTech” on Google*
+                        *Figure 7: Popularity of the search term “FinTech” on Google*
 
 From our PatentsView database,  we queried the FinTech patents of the last 10 years by IPC (International Patent Classification), which is a hierarchical patent classification system. To make our research more specific, we created a set of keywords related to FinTech (financial technology, distributed ledger, cryptocurrency, trading, etc.), and filtered the outcome the IPC results accordingly. 
 Here is a preview of our filtered query: 
 
 <a id='ipc_head'></a>
 ![Image](img/ipc_head.png)
-*Figure 8: Overview on the search by IPC*
+                        *Figure 8: Overview on the search by IPC*
 
 An interesting idea would be to count the patents by year to visualize the evolution of the FinTech patents to get a clear insight into their growth over the past decade.
 
 <a id='evolution_fintech'></a>
 ![Image](img/evolution_fintech.png)
-*Figure 9: Evolution of the FinTech related patents*
+                      *Figure 9: Evolution of the FinTech related patents*
 
 This phenomenal growth indeed explains the Google growth of popularity. The FinTech domain have seen its patents grow from late 2005 all the way up to 2013 to reach a peak of 709 patents. Notice here that the number of patents almost doubled between 2009 and 2010 right after the introduction of Bitcoin, which was the start of a patent technology race for the cryptocurrency companies. We will talk about this a little further.
 
@@ -140,20 +140,20 @@ It is important to locate where is all this growth concentrated, therefore we to
 
 <a id='world_fintech'></a>
 ![Image](img/world_fintech.png)
-*Map 2: Dsitribution of FinTech Related Patents around the world*
+                        *Map 2: Dsitribution of FinTech Related Patents around the world*
 
 
 Funny story here is that ‘Robert A. West’ holds the most patents in FinTech, what are the odds! After some googling it turned out that he was not our professor at all. As a matter of fact, Robert A. West is a intellectual property (IP) specialist who devoted his life to the creative process, and filing a large number of patents, 67 of which are FinTech related.
 
 <a id='fintech_people'></a>
-![Image](img/fintech people.png)
-*Figure 9: TOP 10 people issuers of FinTech patents*
+![Image](img/fintech_people.png)
+                        *Figure 9: TOP 10 people issuers of FinTech patents*
 
 Let us now talk a little bit more about who issues the most FinTech patents among the firms worldwide. 
 
 <a id='fintech_companies'></a>
-![Image](img/fintech companies.png)
-*Figure 10: TOP 15 companies issuers of FinTech patents*
+![Image](img/fintech_companies.png)
+                        *Figure 10: TOP 15 companies issuers of FinTech patents*
 
 Trading Technologies International Inc. [2] is a Chicago based company that develops and delivers professional trading software platforms for trading around the world. It takes the lead of FinTech patents by issuing about 350 patents so far. Among the known companies, American Express ranks 3rd, eBay 5th, IBM 6th and VISA 11th.
 
@@ -161,7 +161,7 @@ We now focus on the blockchain technology. According to ‘the Economist’, blo
 
 <a id='blockchain_firms_quote'></a>
 ![Image](img/blockchain_firms_quote.png)
-*Figure 11: Leader firms in Blockchain related patents*
+    *Figure 11: Leader firms in Blockchain related patents*
 
 
 
